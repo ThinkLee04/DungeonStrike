@@ -148,10 +148,10 @@ TextureImporter:
       name: Vampires1_Idle_full_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 208
-        width: 25
-        height: 31
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +170,10 @@ TextureImporter:
       name: Vampires1_Idle_full_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 208
-        width: 23
-        height: 32
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: Vampires1_Idle_full_2
       rect:
         serializedVersion: 2
-        x: 148
-        y: 208
-        width: 23
-        height: 31
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,10 +214,10 @@ TextureImporter:
       name: Vampires1_Idle_full_3
       rect:
         serializedVersion: 2
-        x: 211
-        y: 208
-        width: 25
-        height: 30
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: Vampires1_Idle_full_4
       rect:
         serializedVersion: 2
-        x: 19
-        y: 144
-        width: 25
-        height: 31
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,10 +258,10 @@ TextureImporter:
       name: Vampires1_Idle_full_5
       rect:
         serializedVersion: 2
-        x: 84
-        y: 144
-        width: 23
-        height: 32
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,10 +280,10 @@ TextureImporter:
       name: Vampires1_Idle_full_6
       rect:
         serializedVersion: 2
-        x: 148
-        y: 144
-        width: 23
-        height: 31
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: Vampires1_Idle_full_7
       rect:
         serializedVersion: 2
-        x: 211
-        y: 144
-        width: 25
-        height: 30
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,10 +324,10 @@ TextureImporter:
       name: Vampires1_Idle_full_8
       rect:
         serializedVersion: 2
-        x: 21
-        y: 80
-        width: 20
-        height: 31
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,10 +346,10 @@ TextureImporter:
       name: Vampires1_Idle_full_9
       rect:
         serializedVersion: 2
-        x: 85
-        y: 80
-        width: 20
-        height: 32
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,10 +368,10 @@ TextureImporter:
       name: Vampires1_Idle_full_10
       rect:
         serializedVersion: 2
-        x: 149
-        y: 80
-        width: 21
-        height: 31
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -390,10 +390,10 @@ TextureImporter:
       name: Vampires1_Idle_full_11
       rect:
         serializedVersion: 2
-        x: 213
-        y: 80
-        width: 22
-        height: 30
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,10 +412,10 @@ TextureImporter:
       name: Vampires1_Idle_full_12
       rect:
         serializedVersion: 2
-        x: 22
-        y: 16
-        width: 20
-        height: 31
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,10 +434,10 @@ TextureImporter:
       name: Vampires1_Idle_full_13
       rect:
         serializedVersion: 2
-        x: 86
-        y: 16
-        width: 20
-        height: 32
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,10 +456,10 @@ TextureImporter:
       name: Vampires1_Idle_full_14
       rect:
         serializedVersion: 2
-        x: 149
-        y: 16
-        width: 21
-        height: 31
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,10 +478,10 @@ TextureImporter:
       name: Vampires1_Idle_full_15
       rect:
         serializedVersion: 2
-        x: 212
-        y: 16
-        width: 22
-        height: 30
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,7 +500,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 49a286b08a491704ab4635fd54b9b98c
     internalID: 0
     vertices: []
     indices: 
@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vampires1_Idle_full_0: -2314506720581648914
+      Vampires1_Idle_full_1: -4517275844016398788
+      Vampires1_Idle_full_10: -6316109472067167574
+      Vampires1_Idle_full_11: -2148228801441827284
+      Vampires1_Idle_full_12: 3586387537180361723
+      Vampires1_Idle_full_13: 3196321286920703807
+      Vampires1_Idle_full_14: -8568807513474505760
+      Vampires1_Idle_full_15: 7754134958465676719
+      Vampires1_Idle_full_2: -8178859167159698214
+      Vampires1_Idle_full_3: -4227697612581873897
+      Vampires1_Idle_full_4: -6649297335012114202
+      Vampires1_Idle_full_5: -649817616242606137
+      Vampires1_Idle_full_6: -8939150947978297554
+      Vampires1_Idle_full_7: -197900017842354399
+      Vampires1_Idle_full_8: -4012613352297535373
+      Vampires1_Idle_full_9: -8493461129109851803
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

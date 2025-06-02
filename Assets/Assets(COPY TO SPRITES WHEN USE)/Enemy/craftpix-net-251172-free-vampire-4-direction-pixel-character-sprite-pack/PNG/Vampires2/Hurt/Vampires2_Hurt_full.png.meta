@@ -148,10 +148,10 @@ TextureImporter:
       name: Vampires2_Hurt_full_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 208
-        width: 29
-        height: 33
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +170,10 @@ TextureImporter:
       name: Vampires2_Hurt_full_1
       rect:
         serializedVersion: 2
-        x: 81
-        y: 208
-        width: 29
-        height: 31
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: Vampires2_Hurt_full_2
       rect:
         serializedVersion: 2
-        x: 142
-        y: 208
-        width: 35
-        height: 30
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,10 +214,10 @@ TextureImporter:
       name: Vampires2_Hurt_full_3
       rect:
         serializedVersion: 2
-        x: 209
-        y: 208
-        width: 29
-        height: 31
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: Vampires2_Hurt_full_4
       rect:
         serializedVersion: 2
-        x: 17
-        y: 144
-        width: 29
-        height: 33
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,10 +258,10 @@ TextureImporter:
       name: Vampires2_Hurt_full_5
       rect:
         serializedVersion: 2
-        x: 81
-        y: 144
-        width: 29
-        height: 31
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,10 +280,10 @@ TextureImporter:
       name: Vampires2_Hurt_full_6
       rect:
         serializedVersion: 2
-        x: 142
-        y: 144
-        width: 35
-        height: 30
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: Vampires2_Hurt_full_7
       rect:
         serializedVersion: 2
-        x: 209
-        y: 144
-        width: 29
-        height: 31
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,10 +324,10 @@ TextureImporter:
       name: Vampires2_Hurt_full_8
       rect:
         serializedVersion: 2
-        x: 20
-        y: 80
-        width: 21
-        height: 33
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,10 +346,10 @@ TextureImporter:
       name: Vampires2_Hurt_full_9
       rect:
         serializedVersion: 2
-        x: 84
-        y: 80
-        width: 24
-        height: 31
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,10 +368,10 @@ TextureImporter:
       name: Vampires2_Hurt_full_10
       rect:
         serializedVersion: 2
-        x: 148
-        y: 80
-        width: 27
-        height: 30
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -390,10 +390,10 @@ TextureImporter:
       name: Vampires2_Hurt_full_11
       rect:
         serializedVersion: 2
-        x: 212
-        y: 80
-        width: 24
-        height: 31
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,10 +412,10 @@ TextureImporter:
       name: Vampires2_Hurt_full_12
       rect:
         serializedVersion: 2
-        x: 22
-        y: 16
-        width: 21
-        height: 33
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,10 +434,10 @@ TextureImporter:
       name: Vampires2_Hurt_full_13
       rect:
         serializedVersion: 2
-        x: 83
-        y: 16
-        width: 24
-        height: 31
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,10 +456,10 @@ TextureImporter:
       name: Vampires2_Hurt_full_14
       rect:
         serializedVersion: 2
-        x: 144
-        y: 16
-        width: 27
-        height: 30
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,10 +478,10 @@ TextureImporter:
       name: Vampires2_Hurt_full_15
       rect:
         serializedVersion: 2
-        x: 211
-        y: 16
-        width: 24
-        height: 31
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,7 +500,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1d031d334c1f48c47adbdcc1c0bb4e1c
     internalID: 0
     vertices: []
     indices: 
@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vampires2_Hurt_full_0: 4341056787947688759
+      Vampires2_Hurt_full_1: -922247260757528370
+      Vampires2_Hurt_full_10: 2376556995493482545
+      Vampires2_Hurt_full_11: -7079460554439715492
+      Vampires2_Hurt_full_12: -2085038817632227170
+      Vampires2_Hurt_full_13: 3005748893223391204
+      Vampires2_Hurt_full_14: -8684340767727275229
+      Vampires2_Hurt_full_15: -4640462720645873705
+      Vampires2_Hurt_full_2: -4511454839945864748
+      Vampires2_Hurt_full_3: -6119318523911989804
+      Vampires2_Hurt_full_4: -402763349991956456
+      Vampires2_Hurt_full_5: -8769092529032216111
+      Vampires2_Hurt_full_6: 8127784120477857628
+      Vampires2_Hurt_full_7: -3787207183764137330
+      Vampires2_Hurt_full_8: 1352645690095351933
+      Vampires2_Hurt_full_9: 8329814241769915977
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

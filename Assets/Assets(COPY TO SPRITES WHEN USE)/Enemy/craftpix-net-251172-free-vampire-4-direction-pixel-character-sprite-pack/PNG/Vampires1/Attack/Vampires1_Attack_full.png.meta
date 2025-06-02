@@ -301,10 +301,10 @@ TextureImporter:
       name: Vampires1_Attack_full_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 208
-        width: 25
-        height: 31
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +323,10 @@ TextureImporter:
       name: Vampires1_Attack_full_1
       rect:
         serializedVersion: 2
-        x: 83
-        y: 218
-        width: 25
-        height: 30
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,10 +345,10 @@ TextureImporter:
       name: Vampires1_Attack_full_2
       rect:
         serializedVersion: 2
-        x: 85
-        y: 208
-        width: 20
-        height: 11
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,10 +367,10 @@ TextureImporter:
       name: Vampires1_Attack_full_3
       rect:
         serializedVersion: 2
-        x: 145
-        y: 206
-        width: 27
-        height: 44
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,10 +389,10 @@ TextureImporter:
       name: Vampires1_Attack_full_4
       rect:
         serializedVersion: 2
-        x: 207
-        y: 217
-        width: 32
-        height: 34
+        x: 256
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,10 +411,10 @@ TextureImporter:
       name: Vampires1_Attack_full_5
       rect:
         serializedVersion: 2
-        x: 212
-        y: 204
-        width: 21
-        height: 15
+        x: 320
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,10 +433,10 @@ TextureImporter:
       name: Vampires1_Attack_full_6
       rect:
         serializedVersion: 2
-        x: 275
-        y: 205
-        width: 30
-        height: 47
+        x: 384
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -455,10 +455,10 @@ TextureImporter:
       name: Vampires1_Attack_full_7
       rect:
         serializedVersion: 2
-        x: 336
-        y: 208
-        width: 36
-        height: 40
+        x: 448
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,10 +477,10 @@ TextureImporter:
       name: Vampires1_Attack_full_8
       rect:
         serializedVersion: 2
-        x: 401
-        y: 208
-        width: 29
-        height: 34
+        x: 512
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,10 +499,10 @@ TextureImporter:
       name: Vampires1_Attack_full_9
       rect:
         serializedVersion: 2
-        x: 463
-        y: 208
-        width: 33
-        height: 29
+        x: 576
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,10 +521,10 @@ TextureImporter:
       name: Vampires1_Attack_full_10
       rect:
         serializedVersion: 2
-        x: 531
-        y: 208
-        width: 29
-        height: 32
+        x: 640
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -543,10 +543,10 @@ TextureImporter:
       name: Vampires1_Attack_full_11
       rect:
         serializedVersion: 2
-        x: 593
-        y: 208
-        width: 33
-        height: 35
+        x: 704
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -565,10 +565,10 @@ TextureImporter:
       name: Vampires1_Attack_full_12
       rect:
         serializedVersion: 2
-        x: 656
-        y: 208
-        width: 31
-        height: 31
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -587,10 +587,10 @@ TextureImporter:
       name: Vampires1_Attack_full_13
       rect:
         serializedVersion: 2
-        x: 719
-        y: 207
-        width: 33
-        height: 33
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,10 +609,10 @@ TextureImporter:
       name: Vampires1_Attack_full_14
       rect:
         serializedVersion: 2
-        x: 19
-        y: 144
-        width: 25
-        height: 31
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -631,10 +631,10 @@ TextureImporter:
       name: Vampires1_Attack_full_15
       rect:
         serializedVersion: 2
-        x: 83
-        y: 154
-        width: 25
-        height: 30
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -653,10 +653,10 @@ TextureImporter:
       name: Vampires1_Attack_full_16
       rect:
         serializedVersion: 2
-        x: 147
-        y: 142
-        width: 27
-        height: 44
+        x: 256
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -675,10 +675,10 @@ TextureImporter:
       name: Vampires1_Attack_full_17
       rect:
         serializedVersion: 2
-        x: 208
-        y: 153
-        width: 32
-        height: 34
+        x: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -697,10 +697,10 @@ TextureImporter:
       name: Vampires1_Attack_full_18
       rect:
         serializedVersion: 2
-        x: 270
-        y: 154
-        width: 30
-        height: 34
+        x: 384
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -719,10 +719,10 @@ TextureImporter:
       name: Vampires1_Attack_full_19
       rect:
         serializedVersion: 2
-        x: 331
-        y: 144
-        width: 36
-        height: 40
+        x: 448
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -741,10 +741,10 @@ TextureImporter:
       name: Vampires1_Attack_full_20
       rect:
         serializedVersion: 2
-        x: 401
-        y: 144
-        width: 29
-        height: 34
+        x: 512
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -763,10 +763,10 @@ TextureImporter:
       name: Vampires1_Attack_full_21
       rect:
         serializedVersion: 2
-        x: 463
-        y: 144
-        width: 33
-        height: 34
+        x: 576
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -785,10 +785,10 @@ TextureImporter:
       name: Vampires1_Attack_full_22
       rect:
         serializedVersion: 2
-        x: 527
-        y: 144
-        width: 29
-        height: 35
+        x: 640
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -807,10 +807,10 @@ TextureImporter:
       name: Vampires1_Attack_full_23
       rect:
         serializedVersion: 2
-        x: 589
-        y: 144
-        width: 33
-        height: 38
+        x: 704
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -829,10 +829,10 @@ TextureImporter:
       name: Vampires1_Attack_full_24
       rect:
         serializedVersion: 2
-        x: 656
-        y: 172
-        width: 11
-        height: 11
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -851,10 +851,10 @@ TextureImporter:
       name: Vampires1_Attack_full_25
       rect:
         serializedVersion: 2
-        x: 656
-        y: 144
-        width: 31
-        height: 31
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -873,10 +873,10 @@ TextureImporter:
       name: Vampires1_Attack_full_26
       rect:
         serializedVersion: 2
-        x: 676
-        y: 172
-        width: 11
-        height: 11
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -895,10 +895,10 @@ TextureImporter:
       name: Vampires1_Attack_full_27
       rect:
         serializedVersion: 2
-        x: 719
-        y: 144
-        width: 33
-        height: 40
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -917,10 +917,10 @@ TextureImporter:
       name: Vampires1_Attack_full_28
       rect:
         serializedVersion: 2
-        x: 86
-        y: 144
-        width: 20
-        height: 11
+        x: 256
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -939,10 +939,10 @@ TextureImporter:
       name: Vampires1_Attack_full_29
       rect:
         serializedVersion: 2
-        x: 214
-        y: 140
-        width: 21
-        height: 15
+        x: 320
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -961,10 +961,10 @@ TextureImporter:
       name: Vampires1_Attack_full_30
       rect:
         serializedVersion: 2
-        x: 278
-        y: 141
-        width: 20
-        height: 14
+        x: 384
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -983,10 +983,10 @@ TextureImporter:
       name: Vampires1_Attack_full_31
       rect:
         serializedVersion: 2
-        x: 21
-        y: 80
-        width: 20
-        height: 31
+        x: 448
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1005,10 +1005,10 @@ TextureImporter:
       name: Vampires1_Attack_full_32
       rect:
         serializedVersion: 2
-        x: 85
-        y: 90
-        width: 21
-        height: 30
+        x: 512
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1027,10 +1027,10 @@ TextureImporter:
       name: Vampires1_Attack_full_33
       rect:
         serializedVersion: 2
-        x: 145
-        y: 78
-        width: 24
-        height: 44
+        x: 576
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1049,10 +1049,10 @@ TextureImporter:
       name: Vampires1_Attack_full_34
       rect:
         serializedVersion: 2
-        x: 207
-        y: 89
-        width: 32
-        height: 34
+        x: 640
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1071,10 +1071,10 @@ TextureImporter:
       name: Vampires1_Attack_full_35
       rect:
         serializedVersion: 2
-        x: 277
-        y: 90
-        width: 28
-        height: 34
+        x: 704
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1093,10 +1093,10 @@ TextureImporter:
       name: Vampires1_Attack_full_36
       rect:
         serializedVersion: 2
-        x: 333
-        y: 90
-        width: 39
-        height: 30
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1115,10 +1115,10 @@ TextureImporter:
       name: Vampires1_Attack_full_37
       rect:
         serializedVersion: 2
-        x: 394
-        y: 80
-        width: 36
-        height: 34
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1137,10 +1137,10 @@ TextureImporter:
       name: Vampires1_Attack_full_38
       rect:
         serializedVersion: 2
-        x: 453
-        y: 80
-        width: 43
-        height: 31
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1159,10 +1159,10 @@ TextureImporter:
       name: Vampires1_Attack_full_39
       rect:
         serializedVersion: 2
-        x: 515
-        y: 80
-        width: 38
-        height: 33
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1181,10 +1181,10 @@ TextureImporter:
       name: Vampires1_Attack_full_40
       rect:
         serializedVersion: 2
-        x: 577
-        y: 80
-        width: 40
-        height: 35
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1203,10 +1203,10 @@ TextureImporter:
       name: Vampires1_Attack_full_41
       rect:
         serializedVersion: 2
-        x: 640
-        y: 100
-        width: 11
-        height: 11
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1225,10 +1225,10 @@ TextureImporter:
       name: Vampires1_Attack_full_42
       rect:
         serializedVersion: 2
-        x: 660
-        y: 80
-        width: 21
-        height: 31
+        x: 384
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1247,10 +1247,10 @@ TextureImporter:
       name: Vampires1_Attack_full_43
       rect:
         serializedVersion: 2
-        x: 703
-        y: 79
-        width: 42
-        height: 33
+        x: 448
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1269,10 +1269,10 @@ TextureImporter:
       name: Vampires1_Attack_full_44
       rect:
         serializedVersion: 2
-        x: 85
-        y: 80
-        width: 20
-        height: 11
+        x: 512
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1291,10 +1291,10 @@ TextureImporter:
       name: Vampires1_Attack_full_45
       rect:
         serializedVersion: 2
-        x: 212
-        y: 76
-        width: 21
-        height: 15
+        x: 576
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1313,10 +1313,10 @@ TextureImporter:
       name: Vampires1_Attack_full_46
       rect:
         serializedVersion: 2
-        x: 277
-        y: 77
-        width: 20
-        height: 14
+        x: 640
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1335,10 +1335,10 @@ TextureImporter:
       name: Vampires1_Attack_full_47
       rect:
         serializedVersion: 2
-        x: 342
-        y: 80
-        width: 21
-        height: 14
+        x: 704
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1353,429 +1353,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_48
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 80
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8eb7d2dfcd5cd91e0800000000000000
-      internalID: -2189376290901099544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_49
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 16
-        width: 20
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: abc886daf293f4ae0800000000000000
-      internalID: -1562967668738716486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_50
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 26
-        width: 21
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c1d627bfb49111e50800000000000000
-      internalID: 6778226728301128988
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_51
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 14
-        width: 24
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be15d9b4e520adef0800000000000000
-      internalID: -82751039134150165
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_52
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 25
-        width: 32
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 160aade791466f800800000000000000
-      internalID: 645813657239461985
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_53
-      rect:
-        serializedVersion: 2
-        x: 270
-        y: 26
-        width: 28
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3c54c78d750560d10800000000000000
-      internalID: 2091447415184573891
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_54
-      rect:
-        serializedVersion: 2
-        x: 331
-        y: 26
-        width: 39
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0b30baeae6cc46250800000000000000
-      internalID: 5937094984530068400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_55
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 16
-        width: 36
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e8498264a6ced36e0800000000000000
-      internalID: -1856067530219023218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_56
-      rect:
-        serializedVersion: 2
-        x: 463
-        y: 16
-        width: 43
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2e5d6d8f36ca92d70800000000000000
-      internalID: 9018929274162697698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_57
-      rect:
-        serializedVersion: 2
-        x: 534
-        y: 16
-        width: 38
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aa2b14b1e08701ec0800000000000000
-      internalID: -3598244100286860630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_58
-      rect:
-        serializedVersion: 2
-        x: 598
-        y: 16
-        width: 40
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: da3c97c01ad7253f0800000000000000
-      internalID: -913529643750276179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_59
-      rect:
-        serializedVersion: 2
-        x: 662
-        y: 16
-        width: 21
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 38e67848446055f30800000000000000
-      internalID: 4563560688760876675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_60
-      rect:
-        serializedVersion: 2
-        x: 692
-        y: 36
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 92f2a152cf148f5e0800000000000000
-      internalID: -1875676693589774551
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_61
-      rect:
-        serializedVersion: 2
-        x: 726
-        y: 15
-        width: 42
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fcf217e2e33ec98e0800000000000000
-      internalID: -1685222304336760881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_62
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 16
-        width: 20
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 36261b6847c9d42e0800000000000000
-      internalID: -2139882223641206173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_63
-      rect:
-        serializedVersion: 2
-        x: 214
-        y: 12
-        width: 21
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 512fd4676943d8580800000000000000
-      internalID: -8823338274114375147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_64
-      rect:
-        serializedVersion: 2
-        x: 278
-        y: 13
-        width: 20
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 67a4ecb7ffc1a3fd0800000000000000
-      internalID: -2361543170983048586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_65
-      rect:
-        serializedVersion: 2
-        x: 340
-        y: 16
-        width: 21
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fed12000b0425f550800000000000000
-      internalID: 6193896492181364207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Attack_full_66
-      rect:
-        serializedVersion: 2
-        x: 692
-        y: 16
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 464f68caa2df0eb60800000000000000
-      internalID: 7773491316566455396
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ac04d1684ec1b3c4baf65ace4ea03b8e
     internalID: 0
     vertices: []
     indices: 
@@ -1784,7 +1366,55 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vampires1_Attack_full_0: 2856116612470704078
+      Vampires1_Attack_full_1: 9006522362679158467
+      Vampires1_Attack_full_10: 5702992984336299704
+      Vampires1_Attack_full_11: 4198827702988432455
+      Vampires1_Attack_full_12: 9085919109330371807
+      Vampires1_Attack_full_13: 323909359658760382
+      Vampires1_Attack_full_14: -3303947196513697400
+      Vampires1_Attack_full_15: 4749894616416834177
+      Vampires1_Attack_full_16: 5845445683389015240
+      Vampires1_Attack_full_17: -2573664647484671643
+      Vampires1_Attack_full_18: -6582551300251629310
+      Vampires1_Attack_full_19: 7545157061846423788
+      Vampires1_Attack_full_2: 1278902652149364506
+      Vampires1_Attack_full_20: -3942506279486583631
+      Vampires1_Attack_full_21: -6787304398535635863
+      Vampires1_Attack_full_22: -1550757428842598968
+      Vampires1_Attack_full_23: 6956015617062754857
+      Vampires1_Attack_full_24: -6985868703894943893
+      Vampires1_Attack_full_25: -4797208675761825199
+      Vampires1_Attack_full_26: -7201217155143254636
+      Vampires1_Attack_full_27: -7035758871659971285
+      Vampires1_Attack_full_28: -3961557621982718499
+      Vampires1_Attack_full_29: 4041110639315089084
+      Vampires1_Attack_full_3: 579490599230306918
+      Vampires1_Attack_full_30: -4161896510868604477
+      Vampires1_Attack_full_31: 2242348284629269472
+      Vampires1_Attack_full_32: 5189165671502977665
+      Vampires1_Attack_full_33: 1531931148230109964
+      Vampires1_Attack_full_34: 5953953835914906763
+      Vampires1_Attack_full_35: -4967738329274267390
+      Vampires1_Attack_full_36: 1872262248644372170
+      Vampires1_Attack_full_37: -4061282801064241714
+      Vampires1_Attack_full_38: -1371147370871343694
+      Vampires1_Attack_full_39: 926112167741347947
+      Vampires1_Attack_full_4: 2975331742699833673
+      Vampires1_Attack_full_40: -2662324344068141864
+      Vampires1_Attack_full_41: 4022303635134727006
+      Vampires1_Attack_full_42: -689019493104057646
+      Vampires1_Attack_full_43: 6481284929022983989
+      Vampires1_Attack_full_44: -1308231906478131641
+      Vampires1_Attack_full_45: -6888691188992347631
+      Vampires1_Attack_full_46: -8535987707516668893
+      Vampires1_Attack_full_47: 9147133839033583812
+      Vampires1_Attack_full_5: 1954638585547425179
+      Vampires1_Attack_full_6: -3016783163736556925
+      Vampires1_Attack_full_7: 6994101250101826140
+      Vampires1_Attack_full_8: 4608914790013536467
+      Vampires1_Attack_full_9: -2817647696775362284
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
