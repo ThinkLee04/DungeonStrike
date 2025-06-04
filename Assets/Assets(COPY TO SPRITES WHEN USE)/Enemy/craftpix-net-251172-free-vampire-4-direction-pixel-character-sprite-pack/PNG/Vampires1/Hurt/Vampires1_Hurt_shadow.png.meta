@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vampires1_Hurt_shadow_0: -1943744392927112532
+      Vampires1_Hurt_shadow_1: -7439721715354026484
+      Vampires1_Hurt_shadow_10: -7981933375509311782
+      Vampires1_Hurt_shadow_11: 5591258115909551969
+      Vampires1_Hurt_shadow_12: 5882730812327908139
+      Vampires1_Hurt_shadow_13: 1869861237316227821
+      Vampires1_Hurt_shadow_14: -872957149705157951
+      Vampires1_Hurt_shadow_15: -4101921189723585316
+      Vampires1_Hurt_shadow_2: 6613805947028884138
+      Vampires1_Hurt_shadow_3: -188593522790931502
+      Vampires1_Hurt_shadow_4: -3733588128944132459
+      Vampires1_Hurt_shadow_5: -6696471486751632435
+      Vampires1_Hurt_shadow_6: -3945021185561686367
+      Vampires1_Hurt_shadow_7: 3474000830107096334
+      Vampires1_Hurt_shadow_8: 4788193759340542303
+      Vampires1_Hurt_shadow_9: -5959770569190918825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

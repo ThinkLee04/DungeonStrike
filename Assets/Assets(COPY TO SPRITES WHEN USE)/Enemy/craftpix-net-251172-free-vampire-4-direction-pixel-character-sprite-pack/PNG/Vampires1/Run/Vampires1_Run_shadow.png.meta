@@ -909,7 +909,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vampires1_Run_shadow_0: 4909183264828984171
+      Vampires1_Run_shadow_1: -6460765506837679500
+      Vampires1_Run_shadow_10: -5995210937823058060
+      Vampires1_Run_shadow_11: -6624103903737410423
+      Vampires1_Run_shadow_12: -4937999084720352194
+      Vampires1_Run_shadow_13: 256151904310710547
+      Vampires1_Run_shadow_14: 836971151022146906
+      Vampires1_Run_shadow_15: -5850602021034814454
+      Vampires1_Run_shadow_16: -7033026869036150816
+      Vampires1_Run_shadow_17: -8383793502092588119
+      Vampires1_Run_shadow_18: 3332256278979984331
+      Vampires1_Run_shadow_19: -5129146442970869574
+      Vampires1_Run_shadow_2: 6869792053978333469
+      Vampires1_Run_shadow_20: -6431751230249084570
+      Vampires1_Run_shadow_21: -3802127992437894830
+      Vampires1_Run_shadow_22: 374172767190447435
+      Vampires1_Run_shadow_23: 2330398726397698033
+      Vampires1_Run_shadow_24: 8422867704388334062
+      Vampires1_Run_shadow_25: 1561863193635715048
+      Vampires1_Run_shadow_26: -611096228869689847
+      Vampires1_Run_shadow_27: -4324253847842350016
+      Vampires1_Run_shadow_28: 256138864777078263
+      Vampires1_Run_shadow_29: 7280629727186972842
+      Vampires1_Run_shadow_3: 2627273222398885062
+      Vampires1_Run_shadow_30: 3246601232573489882
+      Vampires1_Run_shadow_31: 593249896436861409
+      Vampires1_Run_shadow_4: -2261732570827290703
+      Vampires1_Run_shadow_5: -1733878488452283105
+      Vampires1_Run_shadow_6: -3242876258068109896
+      Vampires1_Run_shadow_7: 2926913818882252365
+      Vampires1_Run_shadow_8: 8774989435939088001
+      Vampires1_Run_shadow_9: 6701332142139786517
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

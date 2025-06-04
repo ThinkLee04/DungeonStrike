@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vampires2_Idle_shadow_0: 2085963213720720616
+      Vampires2_Idle_shadow_1: -687320390115361282
+      Vampires2_Idle_shadow_10: -3047128732947069251
+      Vampires2_Idle_shadow_11: 8005623335173090208
+      Vampires2_Idle_shadow_12: 2624549136539694809
+      Vampires2_Idle_shadow_13: -502308455761378022
+      Vampires2_Idle_shadow_14: 7679533346266103660
+      Vampires2_Idle_shadow_15: -8900238171937892958
+      Vampires2_Idle_shadow_2: 1230803392808573206
+      Vampires2_Idle_shadow_3: 9027621442090106412
+      Vampires2_Idle_shadow_4: 1581056742312314261
+      Vampires2_Idle_shadow_5: 7707862244904406645
+      Vampires2_Idle_shadow_6: -2469297056125508908
+      Vampires2_Idle_shadow_7: 7890175241431249144
+      Vampires2_Idle_shadow_8: 7843080745482141921
+      Vampires2_Idle_shadow_9: -4295989774265899229
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
