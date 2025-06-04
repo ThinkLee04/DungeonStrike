@@ -709,7 +709,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vampires2_Walk_shadow_0: 8430770167996774220
+      Vampires2_Walk_shadow_1: 9057023950657121443
+      Vampires2_Walk_shadow_10: -6891777818017937343
+      Vampires2_Walk_shadow_11: -8111066725387360100
+      Vampires2_Walk_shadow_12: 2005298397221252777
+      Vampires2_Walk_shadow_13: 2301917826198223866
+      Vampires2_Walk_shadow_14: -8671575238893888092
+      Vampires2_Walk_shadow_15: -2453812290428955502
+      Vampires2_Walk_shadow_16: 8888884788965361254
+      Vampires2_Walk_shadow_17: -8871570904483828235
+      Vampires2_Walk_shadow_18: 7533661704731696415
+      Vampires2_Walk_shadow_19: 3560348831847760174
+      Vampires2_Walk_shadow_2: 5249708775065905209
+      Vampires2_Walk_shadow_20: -172219540517278837
+      Vampires2_Walk_shadow_21: -7697367935528047060
+      Vampires2_Walk_shadow_22: -1086174766539711610
+      Vampires2_Walk_shadow_23: 772109904637181923
+      Vampires2_Walk_shadow_3: -7691357690895961184
+      Vampires2_Walk_shadow_4: -5725404044135290459
+      Vampires2_Walk_shadow_5: 1744703549904105721
+      Vampires2_Walk_shadow_6: -2278510244918266627
+      Vampires2_Walk_shadow_7: -2937312038755933162
+      Vampires2_Walk_shadow_8: -7128348005758424884
+      Vampires2_Walk_shadow_9: -5153736867699181303
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

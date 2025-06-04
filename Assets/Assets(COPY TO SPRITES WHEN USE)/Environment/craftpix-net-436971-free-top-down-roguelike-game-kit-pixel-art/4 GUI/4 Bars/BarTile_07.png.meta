@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BarTile_07_0: 751053911358139153
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

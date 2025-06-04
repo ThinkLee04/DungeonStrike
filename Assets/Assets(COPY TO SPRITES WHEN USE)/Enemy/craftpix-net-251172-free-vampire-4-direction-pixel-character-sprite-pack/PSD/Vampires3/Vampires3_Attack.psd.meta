@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vampires3_Attack_0: -4325411463528813446
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
