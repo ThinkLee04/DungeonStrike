@@ -1309,55 +1309,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Vampires1_Attack_shadow_0: 1591300530223030463
-      Vampires1_Attack_shadow_1: 234799706104728789
-      Vampires1_Attack_shadow_10: -6004423989646131223
-      Vampires1_Attack_shadow_11: -7034921034793816134
-      Vampires1_Attack_shadow_12: 2997367858511289484
-      Vampires1_Attack_shadow_13: 7561495895781374882
-      Vampires1_Attack_shadow_14: -4558682260510974615
-      Vampires1_Attack_shadow_15: -634368756353032033
-      Vampires1_Attack_shadow_16: -4973765243701681836
-      Vampires1_Attack_shadow_17: -5912133916045164715
-      Vampires1_Attack_shadow_18: -8478044378520464201
-      Vampires1_Attack_shadow_19: -7199913348628962352
-      Vampires1_Attack_shadow_2: 5562904633232994584
-      Vampires1_Attack_shadow_20: 1889738305488133018
-      Vampires1_Attack_shadow_21: -6713739319306019220
-      Vampires1_Attack_shadow_22: -7507633494191635951
-      Vampires1_Attack_shadow_23: 4196061146989843174
-      Vampires1_Attack_shadow_24: -2588154304773034159
-      Vampires1_Attack_shadow_25: 2300662974552479346
-      Vampires1_Attack_shadow_26: 4886251819181274251
-      Vampires1_Attack_shadow_27: -7236063269127583261
-      Vampires1_Attack_shadow_28: -2422901771999137091
-      Vampires1_Attack_shadow_29: 934900758843005748
-      Vampires1_Attack_shadow_3: -3463721301869740198
-      Vampires1_Attack_shadow_30: 4450780303200949479
-      Vampires1_Attack_shadow_31: 6084190646412468368
-      Vampires1_Attack_shadow_32: -8498815954720267334
-      Vampires1_Attack_shadow_33: 6265656819631792283
-      Vampires1_Attack_shadow_34: -8079528999308649541
-      Vampires1_Attack_shadow_35: -2111502835945039966
-      Vampires1_Attack_shadow_36: -2194772496956011621
-      Vampires1_Attack_shadow_37: 1538433726909864929
-      Vampires1_Attack_shadow_38: -4128527857851246186
-      Vampires1_Attack_shadow_39: 6043353760304553401
-      Vampires1_Attack_shadow_4: -3985964853553883781
-      Vampires1_Attack_shadow_40: 4420306077049676148
-      Vampires1_Attack_shadow_41: -5228863833996634388
-      Vampires1_Attack_shadow_42: -3031517891164973101
-      Vampires1_Attack_shadow_43: 950811602265373130
-      Vampires1_Attack_shadow_44: 8822251888024668725
-      Vampires1_Attack_shadow_45: 953890807916368826
-      Vampires1_Attack_shadow_46: 800623687862536738
-      Vampires1_Attack_shadow_47: -5008732187902694763
-      Vampires1_Attack_shadow_5: -1677005807309105821
-      Vampires1_Attack_shadow_6: -1808694232262176906
-      Vampires1_Attack_shadow_7: 6515607641290026207
-      Vampires1_Attack_shadow_8: 6997842124785817802
-      Vampires1_Attack_shadow_9: 6272607768678939842
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
