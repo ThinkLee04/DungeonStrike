@@ -232,10 +232,10 @@ TextureImporter:
       name: Vampires1_Run_full_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 208
-        width: 27
-        height: 36
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,10 +254,10 @@ TextureImporter:
       name: Vampires1_Run_full_1
       rect:
         serializedVersion: 2
-        x: 83
-        y: 218
-        width: 25
-        height: 30
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +276,10 @@ TextureImporter:
       name: Vampires1_Run_full_2
       rect:
         serializedVersion: 2
-        x: 147
-        y: 220
-        width: 25
-        height: 30
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,10 +298,10 @@ TextureImporter:
       name: Vampires1_Run_full_3
       rect:
         serializedVersion: 2
-        x: 211
-        y: 218
-        width: 25
-        height: 30
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +320,10 @@ TextureImporter:
       name: Vampires1_Run_full_4
       rect:
         serializedVersion: 2
-        x: 274
-        y: 208
-        width: 27
-        height: 36
+        x: 256
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,10 +342,10 @@ TextureImporter:
       name: Vampires1_Run_full_5
       rect:
         serializedVersion: 2
-        x: 336
-        y: 208
-        width: 31
-        height: 34
+        x: 320
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -364,10 +364,10 @@ TextureImporter:
       name: Vampires1_Run_full_6
       rect:
         serializedVersion: 2
-        x: 401
-        y: 208
-        width: 29
-        height: 29
+        x: 384
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +386,10 @@ TextureImporter:
       name: Vampires1_Run_full_7
       rect:
         serializedVersion: 2
-        x: 463
-        y: 208
-        width: 33
-        height: 34
+        x: 448
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -408,10 +408,10 @@ TextureImporter:
       name: Vampires1_Run_full_8
       rect:
         serializedVersion: 2
-        x: 86
-        y: 208
-        width: 19
-        height: 11
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -430,10 +430,10 @@ TextureImporter:
       name: Vampires1_Run_full_9
       rect:
         serializedVersion: 2
-        x: 150
-        y: 208
-        width: 19
-        height: 11
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -452,10 +452,10 @@ TextureImporter:
       name: Vampires1_Run_full_10
       rect:
         serializedVersion: 2
-        x: 214
-        y: 208
-        width: 19
-        height: 11
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -474,10 +474,10 @@ TextureImporter:
       name: Vampires1_Run_full_11
       rect:
         serializedVersion: 2
-        x: 18
-        y: 144
-        width: 27
-        height: 36
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -496,10 +496,10 @@ TextureImporter:
       name: Vampires1_Run_full_12
       rect:
         serializedVersion: 2
-        x: 83
-        y: 154
-        width: 25
-        height: 30
+        x: 256
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -518,10 +518,10 @@ TextureImporter:
       name: Vampires1_Run_full_13
       rect:
         serializedVersion: 2
-        x: 147
-        y: 156
-        width: 25
-        height: 30
+        x: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -540,10 +540,10 @@ TextureImporter:
       name: Vampires1_Run_full_14
       rect:
         serializedVersion: 2
-        x: 211
-        y: 154
-        width: 25
-        height: 30
+        x: 384
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,10 +562,10 @@ TextureImporter:
       name: Vampires1_Run_full_15
       rect:
         serializedVersion: 2
-        x: 274
-        y: 144
-        width: 27
-        height: 36
+        x: 448
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -584,10 +584,10 @@ TextureImporter:
       name: Vampires1_Run_full_16
       rect:
         serializedVersion: 2
-        x: 336
-        y: 144
-        width: 31
-        height: 34
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -606,10 +606,10 @@ TextureImporter:
       name: Vampires1_Run_full_17
       rect:
         serializedVersion: 2
-        x: 401
-        y: 144
-        width: 29
-        height: 28
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -628,10 +628,10 @@ TextureImporter:
       name: Vampires1_Run_full_18
       rect:
         serializedVersion: 2
-        x: 463
-        y: 144
-        width: 33
-        height: 34
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -650,10 +650,10 @@ TextureImporter:
       name: Vampires1_Run_full_19
       rect:
         serializedVersion: 2
-        x: 86
-        y: 144
-        width: 19
-        height: 11
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -672,10 +672,10 @@ TextureImporter:
       name: Vampires1_Run_full_20
       rect:
         serializedVersion: 2
-        x: 150
-        y: 144
-        width: 19
-        height: 11
+        x: 256
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -694,10 +694,10 @@ TextureImporter:
       name: Vampires1_Run_full_21
       rect:
         serializedVersion: 2
-        x: 214
-        y: 144
-        width: 19
-        height: 11
+        x: 320
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -716,10 +716,10 @@ TextureImporter:
       name: Vampires1_Run_full_22
       rect:
         serializedVersion: 2
-        x: 21
-        y: 80
-        width: 24
-        height: 36
+        x: 384
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -738,10 +738,10 @@ TextureImporter:
       name: Vampires1_Run_full_23
       rect:
         serializedVersion: 2
-        x: 85
-        y: 90
-        width: 21
-        height: 30
+        x: 448
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -760,10 +760,10 @@ TextureImporter:
       name: Vampires1_Run_full_24
       rect:
         serializedVersion: 2
-        x: 86
-        y: 80
-        width: 19
-        height: 11
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -782,10 +782,10 @@ TextureImporter:
       name: Vampires1_Run_full_25
       rect:
         serializedVersion: 2
-        x: 149
-        y: 91
-        width: 19
-        height: 31
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -804,10 +804,10 @@ TextureImporter:
       name: Vampires1_Run_full_26
       rect:
         serializedVersion: 2
-        x: 150
-        y: 80
-        width: 19
-        height: 11
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -826,10 +826,10 @@ TextureImporter:
       name: Vampires1_Run_full_27
       rect:
         serializedVersion: 2
-        x: 213
-        y: 90
-        width: 22
-        height: 30
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -848,10 +848,10 @@ TextureImporter:
       name: Vampires1_Run_full_28
       rect:
         serializedVersion: 2
-        x: 214
-        y: 80
-        width: 19
-        height: 11
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -870,10 +870,10 @@ TextureImporter:
       name: Vampires1_Run_full_29
       rect:
         serializedVersion: 2
-        x: 277
-        y: 80
-        width: 24
-        height: 36
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -892,10 +892,10 @@ TextureImporter:
       name: Vampires1_Run_full_30
       rect:
         serializedVersion: 2
-        x: 341
-        y: 80
-        width: 26
-        height: 34
+        x: 384
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -914,10 +914,10 @@ TextureImporter:
       name: Vampires1_Run_full_31
       rect:
         serializedVersion: 2
-        x: 405
-        y: 80
-        width: 25
-        height: 29
+        x: 448
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -932,275 +932,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Vampires1_Run_full_32
-      rect:
-        serializedVersion: 2
-        x: 469
-        y: 80
-        width: 27
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b6b8ecf0df0815c40800000000000000
-      internalID: 5499318444376361835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Run_full_33
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 16
-        width: 24
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 07cfa168a2fa60100800000000000000
-      internalID: 73939041071594608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Run_full_34
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 26
-        width: 21
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a71a24bc72d39e090800000000000000
-      internalID: -8004799621551185542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Run_full_35
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 16
-        width: 19
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0f50fda04c6077010800000000000000
-      internalID: 1186424465901159920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Run_full_36
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 16
-        width: 19
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e92a339a592cc680800000000000000
-      internalID: -8733560108384376347
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Run_full_37
-      rect:
-        serializedVersion: 2
-        x: 151
-        y: 27
-        width: 19
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ee5a04dc90db4150800000000000000
-      internalID: 5858005112316387046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Run_full_38
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 26
-        width: 22
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 31de5bb933012eff0800000000000000
-      internalID: -8426435459551981
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Run_full_39
-      rect:
-        serializedVersion: 2
-        x: 214
-        y: 16
-        width: 19
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 26df03444fb815660800000000000000
-      internalID: 7372827946214554978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Run_full_40
-      rect:
-        serializedVersion: 2
-        x: 274
-        y: 16
-        width: 24
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4915a1bb722f91b70800000000000000
-      internalID: 8870387193539613076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Run_full_41
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 16
-        width: 26
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d7fae4868bdbe0040800000000000000
-      internalID: 4615835267822956413
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Run_full_42
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 16
-        width: 25
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be0c2cb585642b150800000000000000
-      internalID: 5886845008237215979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vampires1_Run_full_43
-      rect:
-        serializedVersion: 2
-        x: 463
-        y: 16
-        width: 27
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 538946cdaa0fcc9b0800000000000000
-      internalID: -5058403664811222987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cc05af799babc804b9b612360c599f1d
     internalID: 0
     vertices: []
     indices: 
@@ -1209,7 +945,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vampires1_Run_full_0: -4804214232454736483
+      Vampires1_Run_full_1: -2007431760371159959
+      Vampires1_Run_full_10: 2388145662098790870
+      Vampires1_Run_full_11: 4269835685137510990
+      Vampires1_Run_full_12: -4185228072441591739
+      Vampires1_Run_full_13: 9161418670507105477
+      Vampires1_Run_full_14: 3920995525399372320
+      Vampires1_Run_full_15: -7279733694074456925
+      Vampires1_Run_full_16: -3996523795552511431
+      Vampires1_Run_full_17: -2173755310235962242
+      Vampires1_Run_full_18: 4854468784373384915
+      Vampires1_Run_full_19: -8824159704618493437
+      Vampires1_Run_full_2: -7951007338885873584
+      Vampires1_Run_full_20: -8207059078434165718
+      Vampires1_Run_full_21: -4553819753901758685
+      Vampires1_Run_full_22: 5148931001303610120
+      Vampires1_Run_full_23: -1566276087591800272
+      Vampires1_Run_full_24: -2387066521303787581
+      Vampires1_Run_full_25: 2330254574728781223
+      Vampires1_Run_full_26: 6622704581794605373
+      Vampires1_Run_full_27: -9151999391179555062
+      Vampires1_Run_full_28: 3165639242744017853
+      Vampires1_Run_full_29: 8501316128664817331
+      Vampires1_Run_full_3: -8796653943238230920
+      Vampires1_Run_full_30: 4825510722310687202
+      Vampires1_Run_full_31: 1553084472259887627
+      Vampires1_Run_full_4: 7937360844415642555
+      Vampires1_Run_full_5: -1709505034142873101
+      Vampires1_Run_full_6: 8213738765851405676
+      Vampires1_Run_full_7: -4347207789412664645
+      Vampires1_Run_full_8: -3979958538011291509
+      Vampires1_Run_full_9: -6753463611339612734
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -214,10 +214,10 @@ TextureImporter:
       name: orc2_attack_full_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 209
-        width: 38
-        height: 36
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: orc2_attack_full_1
       rect:
         serializedVersion: 2
-        x: 68
-        y: 209
-        width: 41
-        height: 35
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,10 +258,10 @@ TextureImporter:
       name: orc2_attack_full_2
       rect:
         serializedVersion: 2
-        x: 133
-        y: 205
-        width: 52
-        height: 33
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,10 +280,10 @@ TextureImporter:
       name: orc2_attack_full_3
       rect:
         serializedVersion: 2
-        x: 200
-        y: 202
-        width: 57
-        height: 40
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: orc2_attack_full_4
       rect:
         serializedVersion: 2
-        x: 274
-        y: 201
-        width: 47
-        height: 25
+        x: 256
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,10 +324,10 @@ TextureImporter:
       name: orc2_attack_full_5
       rect:
         serializedVersion: 2
-        x: 277
-        y: 209
-        width: 43
-        height: 34
+        x: 320
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,10 +346,10 @@ TextureImporter:
       name: orc2_attack_full_6
       rect:
         serializedVersion: 2
-        x: 341
-        y: 209
-        width: 39
-        height: 35
+        x: 384
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,10 +368,10 @@ TextureImporter:
       name: orc2_attack_full_7
       rect:
         serializedVersion: 2
-        x: 346
-        y: 200
-        width: 33
-        height: 12
+        x: 448
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -390,10 +390,10 @@ TextureImporter:
       name: orc2_attack_full_8
       rect:
         serializedVersion: 2
-        x: 405
-        y: 209
-        width: 28
-        height: 36
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,10 +412,10 @@ TextureImporter:
       name: orc2_attack_full_9
       rect:
         serializedVersion: 2
-        x: 466
-        y: 209
-        width: 30
-        height: 36
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,10 +434,10 @@ TextureImporter:
       name: orc2_attack_full_10
       rect:
         serializedVersion: 2
-        x: 16
-        y: 145
-        width: 39
-        height: 36
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,10 +456,10 @@ TextureImporter:
       name: orc2_attack_full_11
       rect:
         serializedVersion: 2
-        x: 83
-        y: 145
-        width: 41
-        height: 35
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,10 +478,10 @@ TextureImporter:
       name: orc2_attack_full_12
       rect:
         serializedVersion: 2
-        x: 141
-        y: 145
-        width: 52
-        height: 38
+        x: 256
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,10 +500,10 @@ TextureImporter:
       name: orc2_attack_full_13
       rect:
         serializedVersion: 2
-        x: 199
-        y: 145
-        width: 57
-        height: 43
+        x: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,10 +522,10 @@ TextureImporter:
       name: orc2_attack_full_14
       rect:
         serializedVersion: 2
-        x: 263
-        y: 163
-        width: 47
-        height: 25
+        x: 384
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -544,10 +544,10 @@ TextureImporter:
       name: orc2_attack_full_15
       rect:
         serializedVersion: 2
-        x: 264
-        y: 145
-        width: 34
-        height: 34
+        x: 448
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -566,10 +566,10 @@ TextureImporter:
       name: orc2_attack_full_16
       rect:
         serializedVersion: 2
-        x: 331
-        y: 145
-        width: 31
-        height: 33
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -588,10 +588,10 @@ TextureImporter:
       name: orc2_attack_full_17
       rect:
         serializedVersion: 2
-        x: 333
-        y: 174
-        width: 33
-        height: 12
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -610,10 +610,10 @@ TextureImporter:
       name: orc2_attack_full_18
       rect:
         serializedVersion: 2
-        x: 399
-        y: 145
-        width: 27
-        height: 36
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -632,10 +632,10 @@ TextureImporter:
       name: orc2_attack_full_19
       rect:
         serializedVersion: 2
-        x: 465
-        y: 145
-        width: 31
-        height: 36
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -654,10 +654,10 @@ TextureImporter:
       name: orc2_attack_full_20
       rect:
         serializedVersion: 2
-        x: 20
-        y: 81
-        width: 24
-        height: 36
+        x: 256
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -676,10 +676,10 @@ TextureImporter:
       name: orc2_attack_full_21
       rect:
         serializedVersion: 2
-        x: 83
-        y: 81
-        width: 29
-        height: 37
+        x: 320
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -698,10 +698,10 @@ TextureImporter:
       name: orc2_attack_full_22
       rect:
         serializedVersion: 2
-        x: 129
-        y: 77
-        width: 49
-        height: 34
+        x: 384
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -720,10 +720,10 @@ TextureImporter:
       name: orc2_attack_full_23
       rect:
         serializedVersion: 2
-        x: 192
-        y: 74
-        width: 47
-        height: 45
+        x: 448
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -742,10 +742,10 @@ TextureImporter:
       name: orc2_attack_full_24
       rect:
         serializedVersion: 2
-        x: 255
-        y: 73
-        width: 43
-        height: 47
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -764,10 +764,10 @@ TextureImporter:
       name: orc2_attack_full_25
       rect:
         serializedVersion: 2
-        x: 319
-        y: 74
-        width: 19
-        height: 25
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -786,10 +786,10 @@ TextureImporter:
       name: orc2_attack_full_26
       rect:
         serializedVersion: 2
-        x: 325
-        y: 81
-        width: 37
-        height: 36
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -808,10 +808,10 @@ TextureImporter:
       name: orc2_attack_full_27
       rect:
         serializedVersion: 2
-        x: 390
-        y: 81
-        width: 36
-        height: 36
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -830,10 +830,10 @@ TextureImporter:
       name: orc2_attack_full_28
       rect:
         serializedVersion: 2
-        x: 461
-        y: 81
-        width: 30
-        height: 37
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -852,10 +852,10 @@ TextureImporter:
       name: orc2_attack_full_29
       rect:
         serializedVersion: 2
-        x: 20
-        y: 17
-        width: 23
-        height: 36
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -874,10 +874,10 @@ TextureImporter:
       name: orc2_attack_full_30
       rect:
         serializedVersion: 2
-        x: 75
-        y: 17
-        width: 35
-        height: 37
+        x: 384
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -896,10 +896,10 @@ TextureImporter:
       name: orc2_attack_full_31
       rect:
         serializedVersion: 2
-        x: 142
-        y: 13
-        width: 49
-        height: 33
+        x: 448
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -914,143 +914,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: orc2_attack_full_32
-      rect:
-        serializedVersion: 2
-        x: 209
-        y: 10
-        width: 47
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4df2e4364d8256e70800000000000000
-      internalID: 9107730714090942420
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: orc2_attack_full_33
-      rect:
-        serializedVersion: 2
-        x: 277
-        y: 9
-        width: 44
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d9343438c05439170800000000000000
-      internalID: 8183960867906470813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: orc2_attack_full_34
-      rect:
-        serializedVersion: 2
-        x: 341
-        y: 17
-        width: 38
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e8ac66dda74bc8060800000000000000
-      internalID: 6957133964174084750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: orc2_attack_full_35
-      rect:
-        serializedVersion: 2
-        x: 366
-        y: 10
-        width: 19
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d08a46b11f909e270800000000000000
-      internalID: 8280160321048717325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: orc2_attack_full_36
-      rect:
-        serializedVersion: 2
-        x: 405
-        y: 17
-        width: 34
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ea52878414ad6b80800000000000000
-      internalID: -8399877321896338712
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: orc2_attack_full_37
-      rect:
-        serializedVersion: 2
-        x: 469
-        y: 17
-        width: 27
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 889f13830d9feead0800000000000000
-      internalID: -2670922856292812408
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 73a0bdcb144749342b040ece94e99a20
     internalID: 0
     vertices: []
     indices: 
@@ -1059,7 +927,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orc2_attack_full_0: 8954187285698921793
+      orc2_attack_full_1: 7369422475116114518
+      orc2_attack_full_10: -8973230801233295797
+      orc2_attack_full_11: 7368952380255190324
+      orc2_attack_full_12: -3279367142057360995
+      orc2_attack_full_13: 3167555203293896314
+      orc2_attack_full_14: 6606251569814962155
+      orc2_attack_full_15: -633913448640043036
+      orc2_attack_full_16: 4284874197764038867
+      orc2_attack_full_17: 2632352582678775983
+      orc2_attack_full_18: 2990854137913382811
+      orc2_attack_full_19: -8245487192227940570
+      orc2_attack_full_2: -1173247154441346145
+      orc2_attack_full_20: -8475261127992423094
+      orc2_attack_full_21: -6795166013975289838
+      orc2_attack_full_22: 1343704165552325570
+      orc2_attack_full_23: 3535834944592429949
+      orc2_attack_full_24: 5502158156550813649
+      orc2_attack_full_25: 8108072595376920072
+      orc2_attack_full_26: -509444851576268862
+      orc2_attack_full_27: 4626841457107787390
+      orc2_attack_full_28: 5741399946095421162
+      orc2_attack_full_29: -4243052103261531887
+      orc2_attack_full_3: 784554901587266000
+      orc2_attack_full_30: -5329780486526020083
+      orc2_attack_full_31: -5185922385318251823
+      orc2_attack_full_4: -6146448091886057175
+      orc2_attack_full_5: 1358253190191903591
+      orc2_attack_full_6: 624026439094178846
+      orc2_attack_full_7: 6210005597590915697
+      orc2_attack_full_8: -7457063870938938066
+      orc2_attack_full_9: 4667780783463807567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
