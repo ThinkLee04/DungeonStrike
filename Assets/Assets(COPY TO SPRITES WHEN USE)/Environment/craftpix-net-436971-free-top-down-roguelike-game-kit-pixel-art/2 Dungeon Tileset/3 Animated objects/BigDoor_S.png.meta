@@ -334,7 +334,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BigDoor_S_0: 8652515607064153784
+      BigDoor_S_1: 1731081185423980995
+      BigDoor_S_2: -7218307545915735165
+      BigDoor_S_3: -6887627687308887377
+      BigDoor_S_4: -4959466729620917843
+      BigDoor_S_5: -609392059624681392
+      BigDoor_S_6: -965247841656283844
+      BigDoor_S_7: -441897187456204076
+      BigDoor_S_8: -6636487329983992477
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
