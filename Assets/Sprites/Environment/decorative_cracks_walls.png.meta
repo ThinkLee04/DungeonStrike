@@ -1,28 +1,25 @@
 fileFormatVersion: 2
-guid: c88a507c924c3ed498c4ac95d0a5d3e3
+guid: 0c319905b8504714ab286636af39c2d0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7269668576496765691
-    second: decorative_cracks_walls_0
+      213: -3291933047493928793
+    second: Soldier-Attack01_0
   - first:
-      213: -6799852962439934899
-    second: decorative_cracks_walls_1
+      213: -6387132180496740656
+    second: Soldier-Attack01_1
   - first:
-      213: -4454747756833537264
-    second: decorative_cracks_walls_2
+      213: 3584784805190714906
+    second: Soldier-Attack01_2
   - first:
-      213: 3078729324998488032
-    second: decorative_cracks_walls_3
+      213: -4079507207558419125
+    second: Soldier-Attack01_3
   - first:
-      213: -2393479837115753245
-    second: decorative_cracks_walls_4
+      213: -868544849082176367
+    second: Soldier-Attack01_4
   - first:
-      213: -5166554519593993859
-    second: decorative_cracks_walls_5
-  - first:
-      213: -1420034055698121715
-    second: decorative_cracks_walls_6
+      213: -3853612353132079948
+    second: Soldier-Attack01_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -69,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -118,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: decorative_cracks_walls_0
+      name: Soldier-Attack01_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 335
-        width: 128
-        height: 177
+        x: 40
+        y: 42
+        width: 17
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 505371f22f2fc1b90800000000000000
-      internalID: -7269668576496765691
+      spriteID: 7a851cfa554b052d0800000000000000
+      internalID: -3291933047493928793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_cracks_walls_1
+      name: Soldier-Attack01_1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 287
-        width: 31
-        height: 47
+        x: 140
+        y: 42
+        width: 21
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d4c41e002c112a1a0800000000000000
-      internalID: -6799852962439934899
+      spriteID: 0de86005f195c57a0800000000000000
+      internalID: -6387132180496740656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_cracks_walls_2
+      name: Soldier-Attack01_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 287
-        width: 31
-        height: 47
+        x: 240
+        y: 42
+        width: 22
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01308f5748e8d22c0800000000000000
-      internalID: -4454747756833537264
+      spriteID: a164c9d89c6bfb130800000000000000
+      internalID: 3584784805190714906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_cracks_walls_3
+      name: Soldier-Attack01_3
       rect:
         serializedVersion: 2
-        x: 73
-        y: 292
-        width: 8
-        height: 42
+        x: 335
+        y: 39
+        width: 36
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0efec106208d9ba20800000000000000
-      internalID: 3078729324998488032
+      spriteID: b4da5d21fcda267c0800000000000000
+      internalID: -4079507207558419125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_cracks_walls_4
+      name: Soldier-Attack01_4
       rect:
         serializedVersion: 2
-        x: 89
-        y: 292
-        width: 15
-        height: 42
+        x: 435
+        y: 39
+        width: 36
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ecd7a3f4c6a8ced0800000000000000
-      internalID: -2393479837115753245
+      spriteID: 19c26febf0f42f3f0800000000000000
+      internalID: -868544849082176367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_cracks_walls_5
+      name: Soldier-Attack01_5
       rect:
         serializedVersion: 2
-        x: 111
-        y: 292
-        width: 9
-        height: 42
+        x: 535
+        y: 41
+        width: 24
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,30 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7939eab906bc48b0800000000000000
-      internalID: -5166554519593993859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: decorative_cracks_walls_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 289
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d0cf72dcc860b4ce0800000000000000
-      internalID: -1420034055698121715
+      spriteID: 4b4518d6bf7358ac0800000000000000
+      internalID: -3853612353132079948
       vertices: []
       indices: 
       edges: []
@@ -285,13 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      decorative_cracks_walls_0: -7269668576496765691
-      decorative_cracks_walls_1: -6799852962439934899
-      decorative_cracks_walls_2: -4454747756833537264
-      decorative_cracks_walls_3: 3078729324998488032
-      decorative_cracks_walls_4: -2393479837115753245
-      decorative_cracks_walls_5: -5166554519593993859
-      decorative_cracks_walls_6: -1420034055698121715
+      Soldier-Attack01_0: -3291933047493928793
+      Soldier-Attack01_1: -6387132180496740656
+      Soldier-Attack01_2: 3584784805190714906
+      Soldier-Attack01_3: -4079507207558419125
+      Soldier-Attack01_4: -868544849082176367
+      Soldier-Attack01_5: -3853612353132079948
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

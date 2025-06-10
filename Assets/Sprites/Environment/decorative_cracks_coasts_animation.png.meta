@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 5e02abf228ea0d24f9be40b4720ad88e
+guid: c53ada2f74638da40a9e9280dc70c597
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5136837967311634597
-    second: decorative_cracks_coasts_animation_0
+      213: 2261135143969369812
+    second: Soldier-Shadow_attack2_0
   - first:
-      213: -2334830129808256546
-    second: decorative_cracks_coasts_animation_1
+      213: 191840939740295888
+    second: Soldier-Shadow_attack2_1
   - first:
-      213: 3876940289565872589
-    second: decorative_cracks_coasts_animation_2
+      213: 9144558672366216909
+    second: Soldier-Shadow_attack2_2
   - first:
-      213: 4179518228861786263
-    second: decorative_cracks_coasts_animation_3
+      213: -2368509944092420301
+    second: Soldier-Shadow_attack2_3
   - first:
-      213: 7810828484873198829
-    second: decorative_cracks_coasts_animation_4
+      213: -5127053160540000551
+    second: Soldier-Shadow_attack2_4
   - first:
-      213: 1407625131206465026
-    second: decorative_cracks_coasts_animation_5
+      213: -822343735328164323
+    second: Soldier-Shadow_attack2_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: decorative_cracks_coasts_animation_0
+      name: Soldier-Shadow_attack2_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 271
-        width: 130
-        height: 114
+        x: 42
+        y: 39
+        width: 17
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5f76a9b51946b8b0800000000000000
-      internalID: -5136837967311634597
+      spriteID: 4de2275fe6a216f10800000000000000
+      internalID: 2261135143969369812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_cracks_coasts_animation_1
+      name: Soldier-Shadow_attack2_1
       rect:
         serializedVersion: 2
-        x: 159
-        y: 271
-        width: 130
-        height: 114
+        x: 143
+        y: 39
+        width: 15
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed156ed0e54099fd0800000000000000
-      internalID: -2334830129808256546
+      spriteID: 0d2f89a715e89a200800000000000000
+      internalID: 191840939740295888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_cracks_coasts_animation_2
+      name: Soldier-Shadow_attack2_2
       rect:
         serializedVersion: 2
-        x: 15
-        y: 143
-        width: 130
-        height: 114
+        x: 245
+        y: 39
+        width: 15
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc159f607a8adc530800000000000000
-      internalID: 3876940289565872589
+      spriteID: dc62b1e99aff7ee70800000000000000
+      internalID: 9144558672366216909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_cracks_coasts_animation_3
+      name: Soldier-Shadow_attack2_3
       rect:
         serializedVersion: 2
-        x: 159
-        y: 143
-        width: 130
-        height: 114
+        x: 342
+        y: 39
+        width: 17
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79893936fa1a00a30800000000000000
-      internalID: 4179518228861786263
+      spriteID: 337146731cc512fd0800000000000000
+      internalID: -2368509944092420301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_cracks_coasts_animation_4
+      name: Soldier-Shadow_attack2_4
       rect:
         serializedVersion: 2
-        x: 15
-        y: 15
-        width: 130
-        height: 114
+        x: 442
+        y: 39
+        width: 17
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dec9e5a9f13a56c60800000000000000
-      internalID: 7810828484873198829
+      spriteID: 9de2875905c09d8b0800000000000000
+      internalID: -5127053160540000551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: decorative_cracks_coasts_animation_5
+      name: Soldier-Shadow_attack2_5
       rect:
         serializedVersion: 2
-        x: 159
-        y: 15
-        width: 130
-        height: 114
+        x: 542
+        y: 39
+        width: 17
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20659725993e88310800000000000000
-      internalID: 1407625131206465026
+      spriteID: d163f7ccab27694f0800000000000000
+      internalID: -822343735328164323
       vertices: []
       indices: 
       edges: []
@@ -260,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      decorative_cracks_coasts_animation_0: -5136837967311634597
-      decorative_cracks_coasts_animation_1: -2334830129808256546
-      decorative_cracks_coasts_animation_2: 3876940289565872589
-      decorative_cracks_coasts_animation_3: 4179518228861786263
-      decorative_cracks_coasts_animation_4: 7810828484873198829
-      decorative_cracks_coasts_animation_5: 1407625131206465026
+      Soldier-Shadow_attack2_0: 2261135143969369812
+      Soldier-Shadow_attack2_1: 191840939740295888
+      Soldier-Shadow_attack2_2: 9144558672366216909
+      Soldier-Shadow_attack2_3: -2368509944092420301
+      Soldier-Shadow_attack2_4: -5127053160540000551
+      Soldier-Shadow_attack2_5: -822343735328164323
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
