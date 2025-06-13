@@ -71,7 +71,14 @@ public class EnemyAI : MonoBehaviour
         if (state == State.ChasingPlayer)
         {
             timeSinceStartedMoving = 0f;
-            enemyController.MoveTo(playerTransform.position);
+            if(playerTransform == null)
+            {
+                state = State.Roaming;
+            } else
+            {
+                enemyController.MoveTo(playerTransform.position);
+            }
+                
         }
 
         // Kiểm tra bị kẹt
