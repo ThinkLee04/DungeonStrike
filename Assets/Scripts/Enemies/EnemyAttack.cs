@@ -28,8 +28,8 @@ public class EnemyAttack : MonoBehaviour
                 enemyController.InitiateAttack(lastMoveDirection, collision.gameObject);
             }
             //demo 
-            float delayInSeconds = 5f;
-            Destroy(collision.gameObject, delayInSeconds);
+            //float delayInSeconds = 5f;
+            //Destroy(collision.gameObject, delayInSeconds);
             //demo
         }
     }
