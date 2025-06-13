@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6474623780618690697}
   m_Layer: 0
   m_Name: Orc_1
-  m_TagString: Untagged
+  m_TagString: EnemyTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -191,6 +191,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 333ca8bdba0cfe24abb74b34234ecb6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roamArea: {fileID: 0}
+  minRoamWaitTime: 2
+  maxRoamWaitTime: 4
+  pathfindingTimeout: 5
+  chaseRadius: 7
+  loseTargetRadius: 10
 --- !u!114 &-4108932732868684979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,6 +210,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  normalTag: EnemyTag
+  attackingTag: AttackedTag
 --- !u!114 &6474623780618690697
 MonoBehaviour:
   m_ObjectHideFlags: 0

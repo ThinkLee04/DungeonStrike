@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 908682820518463205}
   m_Layer: 0
   m_Name: Vampires3
-  m_TagString: Untagged
+  m_TagString: EnemyTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,6 +192,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  normalTag: EnemyTag
+  attackingTag: AttackedTag
 --- !u!114 &6648355920874870693
 MonoBehaviour:
   m_ObjectHideFlags: 0

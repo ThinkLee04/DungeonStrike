@@ -61,7 +61,14 @@ public class EnemyAI : MonoBehaviour
             // Khi truy đuổi, ta cũng cần reset bộ đếm thời gian liên tục
             // vì mục tiêu (player) luôn thay đổi
             timeSinceStartedMoving = 0f;
-            enemyController.MoveTo(playerTransform.position);
+            if(playerTransform == null)
+            {
+                state = State.Roaming;
+            } else
+            {
+                enemyController.MoveTo(playerTransform.position);
+            }
+                
         }
 
         // --- LOGIC MỚI: KIỂM TRA BỊ KẸT ---
@@ -114,29 +121,34 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
+            playerTransform = null;
             playerExists = false;
         }
     }
 
     private void HandleStateTransitions()
     {
-        float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
-
-        switch (state)
+        if (playerExists && playerTransform != null)
         {
-            case State.Roaming:
-                if (distanceToPlayer <= chaseRadius)
-                {
-                    state = State.ChasingPlayer;
-                }
-                break;
+            // Kiểm tra khoảng cách đến người chơi để chuyển đổi trạng thái
+            float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
 
-            case State.ChasingPlayer:
-                if (distanceToPlayer > loseTargetRadius)
-                {
-                    state = State.Roaming;
-                }
-                break;
+            switch (state)
+            {
+                case State.Roaming:
+                    if (distanceToPlayer <= chaseRadius)
+                    {
+                        state = State.ChasingPlayer;
+                    }
+                    break;
+
+                case State.ChasingPlayer:
+                    if (distanceToPlayer > loseTargetRadius)
+                    {
+                        state = State.Roaming;
+                    }
+                    break;
+            }
         }
     }
 
