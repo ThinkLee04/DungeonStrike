@@ -33,4 +33,17 @@ public class EnemyAttack : MonoBehaviour
             //demo
         }
     }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        // Kiểm tra xem đối tượng vừa thoát khỏi va chạm có phải là Player không.
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Nếu đúng, ra lệnh cho EnemyController ngừng hành động tấn công.
+            if (enemyController != null)
+            {
+                // Gọi hàm mới mà chúng ta đã tạo trong EnemyController.
+                enemyController.StopAttack();
+            }
+        }
+    }
 }
