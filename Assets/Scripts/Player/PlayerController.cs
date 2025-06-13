@@ -19,8 +19,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float invincibleDuration = 2f;
     [SerializeField] private int maxHealth = 5;     // Máu tối đa
 
-    [SerializeField] private GameObject gameOverPanel;
+    //[SerializeField] private GameObject gameOverPanel;
+    //[SerializeField] private GameObject PausePanel;
+    [SerializeField] private GameObject canvasPrefabRoot;
 
+    private GameObject gameOverPanel;
+    private GameObject PausePanel;
 
     private int currentHealth;
 
@@ -33,7 +37,7 @@ public class PlayerController : MonoBehaviour
     private bool canShoot = true;
     private bool isInvincible = false;
     private float invincibleTimer = 0f;
-
+    private bool isPaused = false;
     private void Awake()
     {
         playerControls = new PlayerControls();
@@ -41,6 +45,17 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         currentHealth = maxHealth;
+
+        // Tìm các panel trong canvas prefab
+        if (canvasPrefabRoot != null)
+        {
+            gameOverPanel = canvasPrefabRoot.transform.Find("GameOverPanel")?.gameObject;
+            PausePanel = canvasPrefabRoot.transform.Find("PausePanel")?.gameObject;
+        }
+        else
+        {
+            Debug.LogError("Canvas prefab root is not assigned!");
+        }
     }
 
     private void OnEnable()
@@ -65,6 +80,17 @@ public class PlayerController : MonoBehaviour
             if (invincibleTimer <= 0f)
             {
                 isInvincible = false;
+            }
+        }
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            if (!isPaused)
+            {
+                PauseGame();
+            }
+            else
+            {
+                ContinueGame();
             }
         }
     }
@@ -169,7 +195,7 @@ public class PlayerController : MonoBehaviour
 
         this.enabled = false;
         rb.linearVelocity = Vector2.zero;
-        gameOverPanel.SetActive(true);
+        gameOverPanel?.SetActive(true);
 
         // Bắt Coroutine đợi 2 giây realtime rồi pause game
         StartCoroutine(PauseGameAfterDelay(1.2f));
@@ -193,4 +219,37 @@ public class PlayerController : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
     }
 
+    public void ReturnHome()
+    {
+        Time.timeScale = 1f;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("HomePage");
+    }
+    public void PauseGame()
+    {
+        if (isPaused) return;
+
+        Time.timeScale = 0f;
+        isPaused = true;
+        playerControls.Disable();
+        PausePanel?.SetActive(true);
+    }
+
+    public void ContinueGame()
+    {
+        if (!isPaused) return;
+
+        Time.timeScale = 1f;
+        isPaused = false;
+        playerControls.Enable();
+        PausePanel?.SetActive(false);
+    }
+    public void QuitGame()
+    {
+        Debug.Log("Quitting game...");
+        #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+        #else
+                Application.Quit();
+        #endif
+    }
 }
