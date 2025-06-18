@@ -70,13 +70,6 @@ Members:
 
 ---
 
-## 📅 Revision History
-
-| Date | Name | Changes |
-|------|------|---------|
-| 28 May 2025 | Dinh Le Thinh | Initial draft |
-| 30 May – 6 June 2025 | All members | Game design, scenes, implementation updates |
-
 ---
 
 🎮 *Enjoy Dungeon Strike and conquer the dungeon one level at a time!*
