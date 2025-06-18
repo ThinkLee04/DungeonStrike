@@ -216,7 +216,7 @@ public class PlayerController : MonoBehaviour
     public void RestartGame()
     {
         Time.timeScale = 1f;
-        UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1");
     }
 
     public void ReturnHome()
