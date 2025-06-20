@@ -7,6 +7,7 @@ TagManager:
   - EnemyTag
   - AttackedTag
   - ArrowTag
+  - WaterHazard
   layers:
   - Default
   - TransparentFX
@@ -39,7 +40,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - WaterCollapse
   m_SortingLayers:
   - name: Default
     uniqueID: 0
@@ -67,6 +68,9 @@ TagManager:
     locked: 0
   - name: High Decor
     uniqueID: 19098705
+    locked: 0
+  - name: Water Rising
+    uniqueID: 1297966309
     locked: 0
   m_RenderingLayers:
   - Default

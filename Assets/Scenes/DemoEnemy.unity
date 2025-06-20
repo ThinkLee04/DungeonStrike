@@ -127,13 +127,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4108932732868684979, guid: ba24cb0c736a43a4fb6396efb92baf1b, type: 3}
+      propertyPath: moveSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 925733051065951923, guid: ba24cb0c736a43a4fb6396efb92baf1b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.4862347
+      value: 10.04
       objectReference: {fileID: 0}
     - target: {fileID: 925733051065951923, guid: ba24cb0c736a43a4fb6396efb92baf1b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0598406
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 925733051065951923, guid: ba24cb0c736a43a4fb6396efb92baf1b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -171,6 +175,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orc_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8123250467078688548, guid: ba24cb0c736a43a4fb6396efb92baf1b, type: 3}
+      propertyPath: roamArea
+      value: 
+      objectReference: {fileID: 237903149}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -187,6 +195,10 @@ PrefabInstance:
     - target: {fileID: 5445798883971852759, guid: db0756701be802a42913c8c31ce97cab, type: 3}
       propertyPath: m_Name
       value: Vampires1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445798883971852759, guid: db0756701be802a42913c8c31ce97cab, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7917785296900211605, guid: db0756701be802a42913c8c31ce97cab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -284,7 +296,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -17.045664, y: 0.46448183}
+  m_Offset: {x: -4.716647, y: 0.6642308}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -294,7 +306,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 23.796604, y: 7.591216}
+  m_Size: {x: 46.840553, y: 6.2419977}
   m_EdgeRadius: 0
 --- !u!4 &237903150
 Transform:
@@ -373,7 +385,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 13
+  orthographic size: 20
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -467,6 +479,10 @@ PrefabInstance:
     - target: {fileID: 1098464194566492890, guid: 71dee697a9bcfc54bb155f1749f9263d, type: 3}
       propertyPath: m_Name
       value: Vampires3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098464194566492890, guid: 71dee697a9bcfc54bb155f1749f9263d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6648355920874870693, guid: 71dee697a9bcfc54bb155f1749f9263d, type: 3}
       propertyPath: roamArea
@@ -583,6 +599,10 @@ PrefabInstance:
     - target: {fileID: 7614447537893254918, guid: e45232889f97e9b43b64ab9aa9b38b4e, type: 3}
       propertyPath: m_Name
       value: Vampires2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614447537893254918, guid: e45232889f97e9b43b64ab9aa9b38b4e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -821,6 +841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orc_3
       objectReference: {fileID: 0}
+    - target: {fileID: 8779288313108658492, guid: ee37df0845f72104388f6a2516006a77, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -877,6 +901,10 @@ PrefabInstance:
     - target: {fileID: 7777283494415955371, guid: 4affc9317dbccbc46bbd127b93a1de18, type: 3}
       propertyPath: m_Name
       value: Orc_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7777283494415955371, guid: 4affc9317dbccbc46bbd127b93a1de18, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1096,6 +1124,10 @@ PrefabInstance:
     - target: {fileID: 9097610757225265563, guid: 124abce2ed4ea6643bcf94df14750e08, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9097610757225265563, guid: 124abce2ed4ea6643bcf94df14750e08, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9097610757225265563, guid: 124abce2ed4ea6643bcf94df14750e08, type: 3}
       propertyPath: m_TagString
