@@ -25,9 +25,16 @@ public class EnemyHealth : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ArrowTag"))
         {
-            // Nếu va chạm với Player, gọi hàm TakeDamage
-            Vector2 attackDirection = collision.relativeVelocity.normalized; // Lấy hướng tấn công từ vận tốc va chạm
+            // Lấy hướng ngược lại với hướng mũi tên lao tới (đối mặt với arrow)
+            Vector2 attackDirection = -collision.relativeVelocity.normalized;
             TakeDamage(attackDirection);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("WaterHazard"))
+        {
+            Die();
         }
     }
     // Gọi hàm này khi enemy bị player tấn công
