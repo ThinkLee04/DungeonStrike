@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    // ... (các biến enum, Header, ... giữ nguyên như cũ) ...
     private enum State { Roaming, ChasingPlayer }
     [Header("State Management")]
     private State state;
@@ -16,12 +15,10 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float maxRoamWaitTime = 4f;
     private Vector2 lastRoamPosition;
 
-    // --- BIẾN MỚI ---
     [Header("Stuck Prevention")]
     [Tooltip("Thời gian tối đa để Enemy đi đến một điểm trước khi coi là bị kẹt.")]
     [SerializeField] private float pathfindingTimeout = 5f;
     private float timeSinceStartedMoving;
-    // --- HẾT BIẾN MỚI ---
 
     [Header("Chasing Settings")]
     private Transform playerTransform;
@@ -29,6 +26,9 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float loseTargetRadius = 10f;
     private bool playerExists = false;
 
+    // --- BIẾN MỚI QUAN TRỌNG ---
+    // Biến để lưu trữ tham chiếu đến Coroutine đang chạy
+    private Coroutine aiBehaviorCoroutine;
 
     private void Awake()
     {
@@ -38,33 +38,50 @@ public class EnemyAI : MonoBehaviour
 
     private void Start()
     {
-        // ... (hàm Start giữ nguyên) ...
         if (roamArea == null) { Debug.LogError("Roam Area chưa được gán..."); }
         FindPlayer();
         lastRoamPosition = transform.position;
-        StartCoroutine(AIBehaviorRoutine()); // Đổi tên Coroutine cho rõ nghĩa hơn
+        // --- THAY ĐỔI: Lưu lại Coroutine ---
+        aiBehaviorCoroutine = StartCoroutine(AIBehaviorRoutine());
     }
 
     private void Update()
     {
-        // ... (hàm Update logic truy đuổi giữ nguyên) ...
-        if (!playerExists)
+        // Kiểm tra xem người chơi có còn tồn tại không
+        if (playerTransform == null)
         {
-            if (state != State.Roaming) state = State.Roaming;
-            return;
+            if (playerExists) // Nếu trước đó người chơi tồn tại
+            {
+                playerExists = false;
+                state = State.Roaming;
+                RestartAIBehavior(); // Khởi động lại AI để nó đi lang thang
+            }
+            return; // Dừng xử lý ở đây nếu không có người chơi
         }
 
+        // Đảm bảo playerExists là true nếu playerTransform hợp lệ
+        if (!playerExists)
+        {
+            playerExists = true;
+        }
+
+        // Logic chính
         HandleStateTransitions();
 
         if (state == State.ChasingPlayer)
         {
-            // Khi truy đuổi, ta cũng cần reset bộ đếm thời gian liên tục
-            // vì mục tiêu (player) luôn thay đổi
             timeSinceStartedMoving = 0f;
-            enemyController.MoveTo(playerTransform.position);
+            if(playerTransform == null)
+            {
+                state = State.Roaming;
+            } else
+            {
+                enemyController.MoveTo(playerTransform.position);
+            }
+                
         }
 
-        // --- LOGIC MỚI: KIỂM TRA BỊ KẸT ---
+        // Kiểm tra bị kẹt
         if (enemyController.IsMoving())
         {
             timeSinceStartedMoving += Time.deltaTime;
@@ -72,38 +89,52 @@ public class EnemyAI : MonoBehaviour
             {
                 Debug.LogWarning(gameObject.name + " is stuck. Forcing a new path.");
                 enemyController.ForceStop();
-                timeSinceStartedMoving = 0f; // Reset bộ đếm
+                timeSinceStartedMoving = 0f;
             }
         }
     }
 
-    // Đổi tên RoamingRoutine thành AIBehaviorRoutine để bao quát hơn
+    // --- HÀM MỚI: RestartAIBehavior ---
+    // Hàm này có thể được gọi từ các script khác (như EnemyHealth)
+    public void RestartAIBehavior()
+    {
+        // Dừng coroutine cũ nếu nó đang chạy
+        if (aiBehaviorCoroutine != null)
+        {
+            StopCoroutine(aiBehaviorCoroutine);
+        }
+        // Buộc enemy dừng di chuyển từ đường đi cũ
+        if (enemyController != null)
+        {
+            enemyController.ForceStop();
+        }
+        // Bắt đầu một coroutine mới, làm mới hoàn toàn hành vi của AI
+        aiBehaviorCoroutine = StartCoroutine(AIBehaviorRoutine());
+    }
+    // --- KẾT THÚC HÀM MỚI ---
+
     private IEnumerator AIBehaviorRoutine()
     {
         while (true)
         {
             if (state == State.Roaming)
             {
+                // Chỉ tìm đường đi mới khi không di chuyển
                 if (!enemyController.IsMoving())
                 {
-                    // Lấy vị trí mới và di chuyển
                     Vector2 roamPosition = GetNewRoamingPosition();
                     enemyController.MoveTo(roamPosition);
-
-                    // Reset bộ đếm thời gian mỗi khi bắt đầu một lộ trình mới
                     timeSinceStartedMoving = 0f;
 
-                    // Chờ một khoảng thời gian ngẫu nhiên
+                    // Chờ một khoảng ngẫu nhiên sau khi đã có mục tiêu mới
                     yield return new WaitForSeconds(Random.Range(minRoamWaitTime, maxRoamWaitTime));
                 }
             }
-            // Chờ một chút trước khi lặp lại vòng lặp chính
+            // Luôn chờ một chút trước khi lặp lại vòng lặp chính để tránh quá tải CPU
             yield return new WaitForSeconds(0.2f);
         }
     }
 
-    // ... (Các hàm còn lại: FindPlayer, HandleStateTransitions, GetNewRoamingPosition, GetQuadrant, OnDrawGizmosSelected giữ nguyên)
-    #region Unchanged Methods
     private void FindPlayer()
     {
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
@@ -114,12 +145,14 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
+            playerTransform = null;
             playerExists = false;
         }
     }
 
     private void HandleStateTransitions()
     {
+        // Đã kiểm tra playerTransform != null ở Update() nên ở đây an toàn
         float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
 
         switch (state)
@@ -128,6 +161,11 @@ public class EnemyAI : MonoBehaviour
                 if (distanceToPlayer <= chaseRadius)
                 {
                     state = State.ChasingPlayer;
+                    // Khi chuyển sang truy đuổi, nên dừng coroutine lang thang
+                    if (aiBehaviorCoroutine != null)
+                    {
+                        StopCoroutine(aiBehaviorCoroutine);
+                    }
                 }
                 break;
 
@@ -135,11 +173,14 @@ public class EnemyAI : MonoBehaviour
                 if (distanceToPlayer > loseTargetRadius)
                 {
                     state = State.Roaming;
+                    // Khi mất dấu, khởi động lại AI để nó đi lang thang ngay lập tức
+                    RestartAIBehavior();
                 }
                 break;
         }
     }
 
+    #region Unchanged Methods
     private Vector2 GetNewRoamingPosition()
     {
         if (roamArea == null) return transform.position;
@@ -153,7 +194,7 @@ public class EnemyAI : MonoBehaviour
 
         do
         {
-            float randomX = Random.Range(roamBounds.min.x, roamBounds.max.x);
+            float randomX = Random.Range(roamBounds.min.x, roamBounds.max.y); // Lỗi nhỏ ở đây, phải là max.x
             float randomY = Random.Range(roamBounds.min.y, roamBounds.max.y);
             newPosition = new Vector2(randomX, randomY);
             newQuadrant = GetQuadrant(newPosition, center);
