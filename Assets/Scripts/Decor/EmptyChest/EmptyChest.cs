@@ -4,6 +4,7 @@ public class EmptyChest : MonoBehaviour
 {
     public AudioSource openSound;
     public GameObject doorToOpen;
+    public GameObject ExchangeItemPanel;
 
     private Animator animator;
     private bool isOpened = false;
@@ -15,6 +16,10 @@ public class EmptyChest : MonoBehaviour
         {
             animator.SetBool("isOpen", false);
         }
+        if (ExchangeItemPanel != null)
+        {
+            ExchangeItemPanel.SetActive(false);
+        }
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -22,6 +27,21 @@ public class EmptyChest : MonoBehaviour
         if (!isOpened && other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
             OpenChest();
+        }
+        if (isOpened && other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
+        {
+            if (ExchangeItemPanel != null)
+            {
+                ExchangeItemPanel.SetActive(true);
+            }
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && ExchangeItemPanel != null)
+        {
+            ExchangeItemPanel.SetActive(false);
         }
     }
 

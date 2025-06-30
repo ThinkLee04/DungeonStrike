@@ -17,17 +17,21 @@ public class PlayerController : MonoBehaviour
 
     [Header("Damage Settings")]
     [SerializeField] private float invincibleDuration = 2f;
-    [SerializeField] private int maxHealth = 5;     // Máu tối đa
+    [SerializeField] private int maxHealth = 4;     // Máu tối đa
 
     //[SerializeField] private GameObject gameOverPanel;
     //[SerializeField] private GameObject PausePanel;
     [SerializeField] private GameObject canvasPrefabRoot;
-
+    
+    [Header("Sands Settings")]
+    [SerializeField] private int sands = 100;
+    [SerializeField] private int hpToGain = 1; // Số máu nhận được khi đổi cát
+    [SerializeField] private int sandsToExchange = 10; // Số cát cần để đổi lấy máu
     private GameObject gameOverPanel;
     private GameObject PausePanel;
-
+    private GameObject HpPanel;
     private int currentHealth;
-
+    private GameObject[] hpObjects;
     private PlayerControls playerControls;
     private Vector2 movement;
     private Rigidbody2D rb;
@@ -44,7 +48,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        currentHealth = maxHealth;
+        currentHealth = maxHealth-2;
 
         // Tìm các panel trong canvas prefab
         if (canvasPrefabRoot != null)
@@ -56,6 +60,24 @@ public class PlayerController : MonoBehaviour
         {
             Debug.LogError("Canvas prefab root is not assigned!");
         }
+    }
+
+    private void Start()
+    {
+        currentHealth = maxHealth-2;
+
+        // Lấy các object con bên trong HpPanel
+        hpObjects = new GameObject[maxHealth+1];
+        for (int i = 0; i <= maxHealth; i++)
+        {
+            HpPanel = canvasPrefabRoot.transform.Find("HpPanel")?.gameObject;
+            hpObjects[i] = HpPanel.transform.Find($"{i}HP")?.gameObject;
+
+            if (hpObjects[i] == null)
+                Debug.LogWarning($"Không tìm thấy object {i}HP trong HpPanel");
+        }
+
+        UpdateHealthUI();
     }
 
     private void OnEnable()
@@ -145,6 +167,13 @@ public class PlayerController : MonoBehaviour
         if (arrowPrefab == null) return;
 
         GameObject arrow = Instantiate(arrowPrefab, shootPoint.position, Quaternion.identity);
+        // Bỏ qua va chạm ngay tại thời điểm bắn
+        //Collider2D playerCollider = GetComponent<Collider2D>();
+        //Collider2D arrowCollider = arrow.GetComponent<Collider2D>();
+        //if (playerCollider != null && arrowCollider != null)
+        //{
+        //    Physics2D.IgnoreCollision(arrowCollider, playerCollider);
+        //}
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction = (mousePosition - (Vector2)transform.position).normalized;
 
@@ -168,6 +197,7 @@ public class PlayerController : MonoBehaviour
         if (!isInvincible)
         {
             currentHealth -= damage;
+            UpdateHealthUI();
             Debug.Log("Player took damage. Current Health: " + currentHealth);
 
             if (currentHealth <= 0)
@@ -213,9 +243,15 @@ public class PlayerController : MonoBehaviour
         return currentHealth;
     }
 
+    public int GetSands()
+    {
+        return sands;
+    }
+
     public void RestartGame()
     {
         Time.timeScale = 1f;
+        GameData.TotalSands = 0;
         UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1");
     }
 
@@ -251,5 +287,35 @@ public class PlayerController : MonoBehaviour
         #else
                 Application.Quit();
         #endif
+    }
+    private void UpdateHealthUI()
+    {
+        for (int i = 0; i <= maxHealth; i++)
+        {
+            if (hpObjects[i] != null)
+            {
+                hpObjects[i].SetActive(i == currentHealth);
+            }
+        }
+    }
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        UpdateHealthUI();
+    }
+
+    public void ExchangeSandsForHP()
+    {
+        if (sands >= sandsToExchange && currentHealth < maxHealth)
+        {
+            sands -= sandsToExchange;
+            currentHealth += hpToGain;
+            currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+            UpdateHealthUI();
+
+            // Cập nhật UI
+            FindObjectOfType<SandsManager>()?.UpdateSandsUI();
+        }
     }
 }

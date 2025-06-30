@@ -27,9 +27,10 @@ public class ArrowController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        // Nếu gặp Player hoặc object là trigger → bỏ qua
+        if ( other.isTrigger)
             return;
 
-        Destroy(gameObject);
+        Destroy(gameObject); // va vào vật cản bình thường → huỷ mũi tên
     }
 }
