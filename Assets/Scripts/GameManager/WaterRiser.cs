@@ -5,19 +5,22 @@ using UnityEngine.Tilemaps;
 public class OverlayWaterRiser : MonoBehaviour
 {
     [Header("Water Object Settings")]
-    [Tooltip("Đối tượng GameObject có SpriteRenderer để hiển thị nước.")]
     public GameObject waterRectangleObject;
-
-    [Tooltip("Màu và độ trong suốt của nước. Alpha (A) là opacity/độ mờ.")]
-    public Color waterColor = new Color(0.2f, 0.5f, 1f, 0.5f); // Màu xanh dương, mờ 50%
+    public Color waterColor = new Color(0.2f, 0.5f, 1f, 0.5f);
 
     [Header("Level Geometry")]
-    [Tooltip("Tilemap chính dùng để xác định ranh giới của màn chơi.")]
     public Tilemap boundsReferenceTilemap;
 
     [Header("Timing")]
-    [Tooltip("Thời gian (giây) giữa mỗi lần nước dâng lên một hàng.")]
     public float timeBetweenRows = 20f;
+
+    // --- PHẦN MỚI: CÀI ĐẶT THAY THẾ TILEMAP ---
+    [Header("Tile Replacement Settings")]
+    [Tooltip("Tilemap gốc sẽ bị thay đổi (ví dụ: Ground_Tilemap).")]
+    public Tilemap sourceTilemapToReplace;
+
+    [Tooltip("Tilemap chứa các tile phiên bản 'ngập nước'. Tilemap này có thể bị tắt (inactive).")]
+    public Tilemap destinationTilemapWithNewTiles;
 
     // --- Biến nội bộ ---
     private SpriteRenderer waterSpriteRenderer;
@@ -68,6 +71,7 @@ public class OverlayWaterRiser : MonoBehaviour
 
         // Bắt đầu từ hàng dưới cùng
         currentRow = mapBounds.yMin;
+        ReplaceRowTiles(currentRow);
 
         // Bắt đầu Coroutine để dâng nước
         StartCoroutine(RiseRoutine());
@@ -83,6 +87,13 @@ public class OverlayWaterRiser : MonoBehaviour
 
             // Cập nhật kích thước và vị trí của hình chữ nhật nước
             UpdateWaterRectangle();
+
+            //Thay thế các tile của hàng hiện tại
+            int nextRowToFlood = currentRow + 1;
+            if (nextRowToFlood <= mapBounds.yMax)
+            {
+                ReplaceRowTiles(nextRowToFlood);
+            }
 
             // Chuyển lên hàng tiếp theo để chuẩn bị cho lần sau
             currentRow++;
@@ -103,7 +114,16 @@ public class OverlayWaterRiser : MonoBehaviour
         Vector3 newPosition = initialWaterPosition + new Vector3(0, currentHeightInUnits / 2, 0);
         waterRectangleObject.transform.position = newPosition;
     }
-
+    private void ReplaceRowTiles(int y)
+    {
+        if (sourceTilemapToReplace == null || destinationTilemapWithNewTiles == null) return;
+        for (int x = mapBounds.xMin; x < mapBounds.xMax; x++)
+        {
+            Vector3Int tilePosition = new Vector3Int(x, y, 0);
+            TileBase newFloodedTile = destinationTilemapWithNewTiles.GetTile(tilePosition);
+            sourceTilemapToReplace.SetTile(tilePosition, newFloodedTile);
+        }
+    }
     //===================================
     private void OnTriggerEnter2D(Collider2D other)
     {

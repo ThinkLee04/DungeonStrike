@@ -76,7 +76,12 @@ public class EnemyAI : MonoBehaviour
                 state = State.Roaming;
             } else
             {
-                enemyController.MoveTo(playerTransform.position);
+                // Lấy vị trí của người chơi
+                Vector2 targetPosition = playerTransform.position;
+                // Kẹp vị trí đó vào trong khu vực cho phép
+                Vector2 clampedTargetPosition = ClampPositionToRoamArea(targetPosition);
+                // Ra lệnh cho Enemy di chuyển đến vị trí đã được kẹp
+                enemyController.MoveTo(clampedTargetPosition);
             }
                 
         }
@@ -123,7 +128,8 @@ public class EnemyAI : MonoBehaviour
                 if (!enemyController.IsMoving())
                 {
                     Vector2 roamPosition = GetNewRoamingPosition();
-                    enemyController.MoveTo(roamPosition);
+                    Vector2 clampedRoamPosition = ClampPositionToRoamArea(roamPosition);
+                    enemyController.MoveTo(clampedRoamPosition);
                     timeSinceStartedMoving = 0f;
 
                     // Chờ một khoảng ngẫu nhiên sau khi đã có mục tiêu mới
@@ -133,6 +139,18 @@ public class EnemyAI : MonoBehaviour
             // Luôn chờ một chút trước khi lặp lại vòng lặp chính để tránh quá tải CPU
             yield return new WaitForSeconds(0.2f);
         }
+    }
+    private Vector2 ClampPositionToRoamArea(Vector2 position)
+    {
+        if (roamArea == null) return position; // Trả về vị trí cũ nếu không có khu vực
+
+        Bounds roamBounds = roamArea.bounds;
+
+        // Sử dụng Mathf.Clamp để giới hạn từng tọa độ
+        float clampedX = Mathf.Clamp(position.x, roamBounds.min.x, roamBounds.max.x);
+        float clampedY = Mathf.Clamp(position.y, roamBounds.min.y, roamBounds.max.y);
+
+        return new Vector2(clampedX, clampedY);
     }
 
     private void FindPlayer()
@@ -194,7 +212,7 @@ public class EnemyAI : MonoBehaviour
 
         do
         {
-            float randomX = Random.Range(roamBounds.min.x, roamBounds.max.y); // Lỗi nhỏ ở đây, phải là max.x
+            float randomX = Random.Range(roamBounds.min.x, roamBounds.max.x); // Lỗi nhỏ ở đây, phải là max.x
             float randomY = Random.Range(roamBounds.min.y, roamBounds.max.y);
             newPosition = new Vector2(randomX, randomY);
             newQuadrant = GetQuadrant(newPosition, center);
