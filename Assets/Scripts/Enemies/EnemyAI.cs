@@ -92,7 +92,7 @@ public class EnemyAI : MonoBehaviour
             timeSinceStartedMoving += Time.deltaTime;
             if (timeSinceStartedMoving > pathfindingTimeout)
             {
-                Debug.LogWarning(gameObject.name + " is stuck. Forcing a new path.");
+                //Debug.LogWarning(gameObject.name + " is stuck. Forcing a new path.");
                 enemyController.ForceStop();
                 timeSinceStartedMoving = 0f;
             }
@@ -212,7 +212,7 @@ public class EnemyAI : MonoBehaviour
 
         do
         {
-            float randomX = Random.Range(roamBounds.min.x, roamBounds.max.x); // Lỗi nhỏ ở đây, phải là max.x
+            float randomX = Random.Range(roamBounds.min.x, roamBounds.max.x);
             float randomY = Random.Range(roamBounds.min.y, roamBounds.max.y);
             newPosition = new Vector2(randomX, randomY);
             newQuadrant = GetQuadrant(newPosition, center);
