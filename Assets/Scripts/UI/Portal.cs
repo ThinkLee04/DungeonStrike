@@ -20,7 +20,7 @@ public class Portal : MonoBehaviour
 
             string currentScene = SceneManager.GetActiveScene().name;
 
-            if (currentScene == "SampleScene")
+            if (currentScene == "Level 3")
             {
                 Time.timeScale = 0f;
 
