@@ -166,7 +166,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -381,11 +381,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2267092626729073985, guid: 124abce2ed4ea6643bcf94df14750e08, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.452
+      value: 22.8
       objectReference: {fileID: 0}
     - target: {fileID: 2267092626729073985, guid: 124abce2ed4ea6643bcf94df14750e08, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -22.03
+      value: 27.3
       objectReference: {fileID: 0}
     - target: {fileID: 2267092626729073985, guid: 124abce2ed4ea6643bcf94df14750e08, type: 3}
       propertyPath: m_LocalPosition.z
@@ -598,7 +598,7 @@ Transform:
   m_GameObject: {fileID: 201094983}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.7432394, y: -1.8417778, z: -9.988364}
+  m_LocalPosition: {x: 27.727549, y: 46.43898, z: -9.988364}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8963,7 +8963,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -9002,10 +9002,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 334656276676415237, guid: c3a8263e25b61ef4b82abe29ebe7faef, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 201094985}
+    - target: {fileID: 334656276676415237, guid: c3a8263e25b61ef4b82abe29ebe7faef, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423516500935301424, guid: c3a8263e25b61ef4b82abe29ebe7faef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -637.0901
+      objectReference: {fileID: 0}
     - target: {fileID: 1306873962848151533, guid: c3a8263e25b61ef4b82abe29ebe7faef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1403498666}
+    - target: {fileID: 1485559434446900739, guid: c3a8263e25b61ef4b82abe29ebe7faef, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1485559434446900739, guid: c3a8263e25b61ef4b82abe29ebe7faef, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1485559434446900739, guid: c3a8263e25b61ef4b82abe29ebe7faef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1485559434446900739, guid: c3a8263e25b61ef4b82abe29ebe7faef, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -122
+      objectReference: {fileID: 0}
+    - target: {fileID: 2291618959595623423, guid: c3a8263e25b61ef4b82abe29ebe7faef, type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2769073325447167919, guid: c3a8263e25b61ef4b82abe29ebe7faef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -9026,10 +9058,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6403890403198988198, guid: c3a8263e25b61ef4b82abe29ebe7faef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -900
+      objectReference: {fileID: 0}
     - target: {fileID: 6531662803960816489, guid: c3a8263e25b61ef4b82abe29ebe7faef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1403498666}
+    - target: {fileID: 6689356887144220416, guid: c3a8263e25b61ef4b82abe29ebe7faef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -748.08
+      objectReference: {fileID: 0}
     - target: {fileID: 6751424868180059614, guid: c3a8263e25b61ef4b82abe29ebe7faef, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -42022,8 +42062,10 @@ EdgeCollider2D:
   - {x: 29.418245, y: 22.830444}
   - {x: 29.42205, y: 29.67869}
   - {x: 23.6041, y: 29.626417}
-  - {x: 23.365694, y: 29.924913}
-  - {x: 22.195375, y: 29.929338}
+  - {x: 23.323196, y: 29.930227}
+  - {x: 23.308819, y: 30.72777}
+  - {x: 22.20857, y: 30.719551}
+  - {x: 22.22725, y: 29.93465}
   - {x: 21.975447, y: 29.663029}
   - {x: 8.509271, y: 29.686287}
   - {x: 8.460323, y: 32.470108}
@@ -42337,7 +42379,7 @@ Transform:
   m_GameObject: {fileID: 1775669120}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.9808173, y: -2.8912392, z: -9.988364}
+  m_LocalPosition: {x: 29.232817, y: 46.43876, z: -9.988364}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43329,7 +43371,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
