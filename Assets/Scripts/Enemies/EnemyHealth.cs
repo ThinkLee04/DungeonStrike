@@ -90,4 +90,8 @@ public class EnemyHealth : MonoBehaviour
 
         Destroy(gameObject, 1f); // Hủy đối tượng sau 2 giây
     }
+    public bool IsDead()
+    {
+        return isDead;
+    }
 }
