@@ -9,7 +9,6 @@ public class CoinChest : MonoBehaviour
     private bool isOpened = false;
     private Animator animator;
     public GameObject keyPrefab;
-    //private AudioSource audioSource;
 
     void Start()
     {
@@ -37,8 +36,7 @@ public class CoinChest : MonoBehaviour
             animator.SetBool("isOpen", true);
         }
 
-        //if (openSound && audioSource)
-        //    audioSource.PlayOneShot(openSound);
+        SoundUtils.PlaySoundAndDestroy(openSound, transform.position);
 
         Vector3 spawnPosition = transform.position + new Vector3(0, 0.5f, 0);
         for (int i = 0; i < coinAmount; i++)

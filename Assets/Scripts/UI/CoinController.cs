@@ -2,6 +2,8 @@
 
 public class CoinController : MonoBehaviour
 {
+    public AudioClip collectSound;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -11,7 +13,10 @@ public class CoinController : MonoBehaviour
             {
                 player.AddCoins(1);
             }
-            Destroy(gameObject); // Tự xoá đồng tiền
+
+            SoundUtils.PlaySoundAndDestroy(collectSound, transform.position);
+
+            Destroy(gameObject);
         }
     }
 }

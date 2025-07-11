@@ -15,11 +15,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float arrowRange = 5f;
     [SerializeField] private float shootCooldown = 3f;
     [SerializeField] private float shootDelay = 0.08f;
+    [SerializeField] private AudioClip shootSound;
 
     [Header("Damage Settings")]
     [SerializeField] private float invincibleDuration = 2f;
     [SerializeField] private int maxHealth = 4;
-
+    [SerializeField] private AudioClip hurtSound;
     [SerializeField] private GameObject canvasPrefabRoot;
 
     [Header("Coins Settings")]
@@ -146,11 +147,18 @@ public class PlayerController : MonoBehaviour
     {
         if (!canShoot) return;
 
+        Invoke(nameof(PlayShootSound), 1f);
+
         canShoot = false;
         animator.SetTrigger("shoot");
 
         Invoke(nameof(SpawnArrow), shootDelay);
         Invoke(nameof(EnableShooting), shootCooldown);
+    }
+
+    private void PlayShootSound()
+    {
+        SoundUtils.PlaySoundAndDestroy(shootSound, transform.position);
     }
 
     private void SpawnArrow()
@@ -188,10 +196,14 @@ public class PlayerController : MonoBehaviour
 
             if (currentHealth <= 0)
             {
-                Die();
+                PlayHurtSound();
+                gameObject.tag = "Untagged";
+                animator.SetTrigger("die");
+                Invoke(nameof(Die),1.6f);
             }
             else
             {
+                PlayHurtSound();
                 Hurt();
             }
         }
@@ -204,18 +216,17 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("isHurting");
     }
 
+    private void PlayHurtSound()
+    {
+        SoundUtils.PlaySoundAndDestroy(hurtSound, transform.position);
+    }
+
     private void Die()
     {
-        animator.SetTrigger("die");
+        isInvincible = true;
         this.enabled = false;
         rb.linearVelocity = Vector2.zero;
         gameOverPanel?.SetActive(true);
-        StartCoroutine(PauseGameAfterDelay(1.2f));
-    }
-
-    private IEnumerator PauseGameAfterDelay(float delay)
-    {
-        yield return new WaitForSecondsRealtime(delay);
         Time.timeScale = 0f;
     }
 

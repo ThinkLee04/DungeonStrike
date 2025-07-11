@@ -143,12 +143,15 @@ MonoBehaviour:
   arrowRange: 11
   shootCooldown: 1
   shootDelay: 1
+  shootSound: {fileID: 8300000, guid: 9a5fd239ade53d942ad0ae56bf9b5ca0, type: 3}
   invincibleDuration: 2
   maxHealth: 4
+  hurtSound: {fileID: 8300000, guid: 9863fbe3b4c55b74992b2614a3cf33ab, type: 3}
   canvasPrefabRoot: {fileID: 0}
-  sands: 100
+  coins: 0
   hpToGain: 1
-  sandsToExchange: 10
+  coinsToExchange: 10
+  hasKey: 0
 --- !u!50 &21777744370031496
 Rigidbody2D:
   serializedVersion: 5
