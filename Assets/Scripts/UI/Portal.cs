@@ -8,6 +8,7 @@ public class Portal : MonoBehaviour
     [SerializeField] private string nextSceneName;
     [SerializeField] private GameObject winPanel;
     [SerializeField] private Text coinsText;
+    [SerializeField] private AudioClip winSound;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -50,7 +51,7 @@ public class Portal : MonoBehaviour
                 if (winPanel != null)
                 {
                     winPanel.SetActive(true);
-
+                    SoundUtils.PlaySoundAndDestroy(winSound, transform.position);
                     if (coinsText != null)
                     {
                         coinsText.text = $"Total score: {GameData.TotalCoins}";
