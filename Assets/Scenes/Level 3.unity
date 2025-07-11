@@ -99498,6 +99498,7 @@ MonoBehaviour:
   nextSceneName: Level 3
   winPanel: {fileID: 100784598}
   coinsText: {fileID: 960874833}
+  winSound: {fileID: 8300000, guid: 9c4d8cf4d48bedb499b262ab65458e49, type: 3}
 --- !u!61 &1301012093
 BoxCollider2D:
   m_ObjectHideFlags: 0
