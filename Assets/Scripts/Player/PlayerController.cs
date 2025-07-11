@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -17,21 +18,22 @@ public class PlayerController : MonoBehaviour
 
     [Header("Damage Settings")]
     [SerializeField] private float invincibleDuration = 2f;
-    [SerializeField] private int maxHealth = 4;     // Máu tối đa
+    [SerializeField] private int maxHealth = 4;
 
-    //[SerializeField] private GameObject gameOverPanel;
-    //[SerializeField] private GameObject PausePanel;
     [SerializeField] private GameObject canvasPrefabRoot;
-    
+
     [Header("Sands Settings")]
-    [SerializeField] private int sands = 100;
-    [SerializeField] private int hpToGain = 1; // Số máu nhận được khi đổi cát
-    [SerializeField] private int sandsToExchange = 10; // Số cát cần để đổi lấy máu
+    [SerializeField] private int coins;
+    [SerializeField] private int hpToGain = 1;
+    [SerializeField] private int coinsToExchange = 10;
+
     private GameObject gameOverPanel;
     private GameObject PausePanel;
     private GameObject HpPanel;
+
     private int currentHealth;
     private GameObject[] hpObjects;
+
     private PlayerControls playerControls;
     private Vector2 movement;
     private Rigidbody2D rb;
@@ -42,15 +44,16 @@ public class PlayerController : MonoBehaviour
     private bool isInvincible = false;
     private float invincibleTimer = 0f;
     private bool isPaused = false;
+
     private void Awake()
     {
         playerControls = new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        currentHealth = maxHealth-2;
 
-        // Tìm các panel trong canvas prefab
+        currentHealth = maxHealth - 2;
+
         if (canvasPrefabRoot != null)
         {
             gameOverPanel = canvasPrefabRoot.transform.Find("GameOverPanel")?.gameObject;
@@ -64,10 +67,10 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        currentHealth = maxHealth-2;
+        currentHealth = GameData.CurrentHealth > 0 ? GameData.CurrentHealth : maxHealth - 2;
+        coins = GameData.TotalCoins;
 
-        // Lấy các object con bên trong HpPanel
-        hpObjects = new GameObject[maxHealth+1];
+        hpObjects = new GameObject[maxHealth + 1];
         for (int i = 0; i <= maxHealth; i++)
         {
             HpPanel = canvasPrefabRoot.transform.Find("HpPanel")?.gameObject;
@@ -104,16 +107,11 @@ public class PlayerController : MonoBehaviour
                 isInvincible = false;
             }
         }
+
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            if (!isPaused)
-            {
-                PauseGame();
-            }
-            else
-            {
-                ContinueGame();
-            }
+            if (!isPaused) PauseGame();
+            else ContinueGame();
         }
     }
 
@@ -128,7 +126,6 @@ public class PlayerController : MonoBehaviour
         movement = playerControls.Movement.Move.ReadValue<Vector2>();
         animator.SetFloat("moveX", movement.x);
         animator.SetFloat("moveY", movement.y);
-        //animator.SetFloat("speed", movement.magnitude);
     }
 
     private void Move()
@@ -141,14 +138,7 @@ public class PlayerController : MonoBehaviour
         Vector3 mousePos = Input.mousePosition;
         Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(transform.position);
 
-        if (mousePos.x < playerScreenPoint.x)
-        {
-            spriteRenderer.flipX = true;
-        }
-        else
-        {
-            spriteRenderer.flipX = false;
-        }
+        spriteRenderer.flipX = mousePos.x < playerScreenPoint.x;
     }
 
     private void Shoot()
@@ -167,13 +157,7 @@ public class PlayerController : MonoBehaviour
         if (arrowPrefab == null) return;
 
         GameObject arrow = Instantiate(arrowPrefab, shootPoint.position, Quaternion.identity);
-        // Bỏ qua va chạm ngay tại thời điểm bắn
-        //Collider2D playerCollider = GetComponent<Collider2D>();
-        //Collider2D arrowCollider = arrow.GetComponent<Collider2D>();
-        //if (playerCollider != null && arrowCollider != null)
-        //{
-        //    Physics2D.IgnoreCollision(arrowCollider, playerCollider);
-        //}
+
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction = (mousePosition - (Vector2)transform.position).normalized;
 
@@ -191,14 +175,15 @@ public class PlayerController : MonoBehaviour
         canShoot = true;
     }
 
-    // ---------------- Damage & Invincibility ----------------
     public void TakeDamage(int damage)
     {
         if (!isInvincible)
         {
             currentHealth -= damage;
+            currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+            GameData.CurrentHealth = currentHealth;
+
             UpdateHealthUI();
-            Debug.Log("Player took damage. Current Health: " + currentHealth);
 
             if (currentHealth <= 0)
             {
@@ -220,46 +205,36 @@ public class PlayerController : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Player died.");
         animator.SetTrigger("die");
-
         this.enabled = false;
         rb.linearVelocity = Vector2.zero;
         gameOverPanel?.SetActive(true);
-
-        // Bắt Coroutine đợi 2 giây realtime rồi pause game
         StartCoroutine(PauseGameAfterDelay(1.2f));
     }
 
     private IEnumerator PauseGameAfterDelay(float delay)
     {
-        yield return new WaitForSecondsRealtime(delay);  // Đợi 2 giây thật (bất chấp timeScale)
+        yield return new WaitForSecondsRealtime(delay);
         Time.timeScale = 0f;
     }
 
-
-    public int GetCurrentHealth()
-    {
-        return currentHealth;
-    }
-
-    public int GetSands()
-    {
-        return sands;
-    }
+    public int GetCurrentHealth() => currentHealth;
+    public int GetCoins() => GameData.TotalCoins;
 
     public void RestartGame()
     {
         Time.timeScale = 1f;
-        GameData.TotalSands = 0;
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1");
+        GameData.TotalCoins = 0;
+        GameData.CurrentHealth = maxHealth - 2;
+        SceneManager.LoadScene("Level 1");
     }
 
     public void ReturnHome()
     {
         Time.timeScale = 1f;
-        UnityEngine.SceneManagement.SceneManager.LoadScene("HomePage");
+        SceneManager.LoadScene("HomePage");
     }
+
     public void PauseGame()
     {
         if (isPaused) return;
@@ -279,15 +254,16 @@ public class PlayerController : MonoBehaviour
         playerControls.Enable();
         PausePanel?.SetActive(false);
     }
+
     public void QuitGame()
     {
-        Debug.Log("Quitting game...");
-        #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-        #else
-                Application.Quit();
-        #endif
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
+
     private void UpdateHealthUI()
     {
         for (int i = 0; i <= maxHealth; i++)
@@ -298,24 +274,34 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
     public void Heal(int amount)
     {
         currentHealth += amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        GameData.CurrentHealth = currentHealth;
         UpdateHealthUI();
     }
 
-    public void ExchangeSandsForHP()
+    public void ExchangeCoinsForHP()
     {
-        if (sands >= sandsToExchange && currentHealth < maxHealth)
+        if (coins >= coinsToExchange && currentHealth < maxHealth)
         {
-            sands -= sandsToExchange;
+            coins -= coinsToExchange;
             currentHealth += hpToGain;
             currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-            UpdateHealthUI();
 
-            // Cập nhật UI
-            FindObjectOfType<SandsManager>()?.UpdateSandsUI();
+            GameData.TotalCoins = coins;
+            GameData.CurrentHealth = currentHealth;
+
+            UpdateHealthUI();
+            FindObjectOfType<CoinsManager>()?.UpdateCoinsUI();
         }
+    }
+    public void AddSands(int amount)
+    {
+        coins += amount;
+        GameData.TotalCoins = coins;
+        FindObjectOfType<CoinsManager>()?.UpdateCoinsUI();
     }
 }

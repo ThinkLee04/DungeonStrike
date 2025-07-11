@@ -17,7 +17,7 @@ public class MenuManager : MonoBehaviour
 
         PlayerPrefs.SetString("PlayerName", playerName); // Lưu tên
         GameData.PlayerName = playerName; // Cập nhật dữ liệu game
-        GameData.TotalSands = 0; // Reset tổng số cát khi bắt đầu game mới
+        GameData.TotalCoins = 0; // Reset tổng số cát khi bắt đầu game mới
         SceneManager.LoadScene("Level 1"); // Bắt đầu game
     }
 }
