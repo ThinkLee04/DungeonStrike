@@ -2,6 +2,8 @@
 
 public class KeyController : MonoBehaviour
 {
+    public AudioClip collectSound;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -10,8 +12,11 @@ public class KeyController : MonoBehaviour
             if (player != null)
             {
                 player.hasKey = true;
-                Debug.Log("Player collected the key!");
+                player.AddCoins(1);
             }
+
+            SoundUtils.PlaySoundAndDestroy(collectSound, transform.position);
+
             Destroy(gameObject);
         }
     }

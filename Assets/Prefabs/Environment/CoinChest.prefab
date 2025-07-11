@@ -164,7 +164,7 @@ MonoBehaviour:
   isKeyChest: 0
   coinPrefab: {fileID: 568460241362886306, guid: 707093ad77766624690f15d7441fc7cc, type: 3}
   coinAmount: 9
-  openSound: {fileID: 0}
+  openSound: {fileID: 8300000, guid: bfab8ac0df7abc342b1161622d143283, type: 3}
   keyPrefab: {fileID: 5862189896914881390, guid: 04955e4dc3f2c2144afc58a9e6c61ce5, type: 3}
 --- !u!70 &5572187812898693394
 CapsuleCollider2D:
