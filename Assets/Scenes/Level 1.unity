@@ -45169,7 +45169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94947cc880d3feb4785d046be1c6b473, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Level 2
+  nextSceneName: Level 3
   winPanel: {fileID: 0}
   coinsText: {fileID: 0}
 --- !u!61 &1992544329

@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float shootCooldown = 3f;
     [SerializeField] private float shootDelay = 0.08f;
     [SerializeField] private AudioClip shootSound;
+    [SerializeField] private AudioClip loseSound;
 
     [Header("Damage Settings")]
     [SerializeField] private float invincibleDuration = 2f;
@@ -223,6 +224,7 @@ public class PlayerController : MonoBehaviour
 
     private void Die()
     {
+        SoundUtils.PlaySoundAndDestroy(loseSound, transform.position);
         isInvincible = true;
         this.enabled = false;
         rb.linearVelocity = Vector2.zero;
