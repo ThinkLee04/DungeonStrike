@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
 
-    public bool HasKey = false;
+    public bool hasKey = false;
     private bool canShoot = true;
     private bool isInvincible = false;
     private float invincibleTimer = 0f;

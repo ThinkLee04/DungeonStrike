@@ -161,9 +161,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884faddd006e9e8488aee192b6c541a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isKeyChest: 0
   coinPrefab: {fileID: 568460241362886306, guid: 707093ad77766624690f15d7441fc7cc, type: 3}
   coinAmount: 9
   openSound: {fileID: 0}
+  keyPrefab: {fileID: 5862189896914881390, guid: 04955e4dc3f2c2144afc58a9e6c61ce5, type: 3}
 --- !u!70 &5572187812898693394
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

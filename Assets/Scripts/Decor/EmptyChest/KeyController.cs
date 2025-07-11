@@ -9,7 +9,7 @@ public class KeyController : MonoBehaviour
             PlayerController player = collision.GetComponent<PlayerController>();
             if (player != null)
             {
-                player.HasKey = true;
+                player.hasKey = true;
                 Debug.Log("Player collected the key!");
             }
             Destroy(gameObject);

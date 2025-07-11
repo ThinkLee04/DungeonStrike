@@ -26,7 +26,7 @@ public class Portal : MonoBehaviour
             {
                 if (other.CompareTag("Player"))
                 {
-                    if (player != null && player.HasKey)
+                    if (player != null && player.hasKey)
                     {
                         Debug.Log("Door opened! Loading next level...");
                         SceneManager.LoadScene(nextSceneName);
@@ -36,6 +36,11 @@ public class Portal : MonoBehaviour
                         Debug.Log("You need a key to open this door.");
                     }
                 }
+            }
+
+            if (currentScene == "Level 2")
+            {
+                SceneManager.LoadScene(nextSceneName);
             }
 
             if (currentScene == "Level 3")
@@ -53,10 +58,6 @@ public class Portal : MonoBehaviour
 
                     SaveHighScore(GameData.PlayerName, GameData.TotalCoins);
                 }
-            }
-            else
-            {
-                SceneManager.LoadScene(nextSceneName);
             }
         }
     }
