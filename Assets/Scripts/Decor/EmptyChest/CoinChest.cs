@@ -8,6 +8,7 @@ public class CoinChest : MonoBehaviour
     public AudioClip openSound;
     private bool isOpened = false;
     private Animator animator;
+    public GameObject keyPrefab;
     //private AudioSource audioSource;
 
     void Start()
@@ -45,6 +46,10 @@ public class CoinChest : MonoBehaviour
             Vector3 offset = new Vector3(Random.Range(-1.5f, 1.5f), Random.Range(0.5f, 1.5f), 0);
             GameObject coin = Instantiate(coinPrefab, transform.position + offset, Quaternion.identity);
             Rigidbody2D rb = coin.GetComponent<Rigidbody2D>();
+            if (isKeyChest)
+            {
+                Instantiate(keyPrefab, transform.position + new Vector3(0, 1f, 0), Quaternion.identity);
+            }
             if (rb != null)
             {
                 rb.AddForce(new Vector2(Random.Range(-1f, 1f), Random.Range(3f, 5f)), ForceMode2D.Impulse);
