@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -28,6 +28,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int coins;
     [SerializeField] private int hpToGain = 1;
     [SerializeField] private int coinsToExchange = 10;
+
+    [Header("Keys Settings")]
+    [SerializeField] private TextMeshProUGUI keysText; // hoặc TMP_Text nếu dùng TextMeshPro
 
     private GameObject gameOverPanel;
     private GameObject PausePanel;
@@ -84,6 +87,7 @@ public class PlayerController : MonoBehaviour
         }
 
         UpdateHealthUI();
+        UpdateKeyUI();
     }
 
     private void OnEnable()
@@ -309,13 +313,37 @@ public class PlayerController : MonoBehaviour
             GameData.CurrentHealth = currentHealth;
 
             UpdateHealthUI();
-            FindObjectOfType<CoinsManager>()?.UpdateCoinsUI();
+            FindFirstObjectByType<CoinsManager>()?.UpdateCoinsUI();
         }
     }
     public void AddCoins(int amount)
     {
         coins += amount;
         GameData.TotalCoins = coins;
-        FindObjectOfType<CoinsManager>()?.UpdateCoinsUI();
+        FindFirstObjectByType<CoinsManager>()?.UpdateCoinsUI();
     }
+
+    private void UpdateKeyUI()
+    {
+        if (keysText != null)
+        {
+            if (hasKey)
+            {
+                keysText.text = "1 / 1";
+                keysText.color = Color.green;
+            }
+            else
+            {
+                keysText.text = "0 / 1";
+                keysText.color = Color.red;
+            }
+        }
+    }
+
+    public void SetHasKey(bool value)
+    {
+        hasKey = value;
+        UpdateKeyUI(); // cập nhật UI ngay khi nhận key
+    }
+
 }

@@ -11,12 +11,11 @@ public class KeyController : MonoBehaviour
             PlayerController player = collision.GetComponent<PlayerController>();
             if (player != null)
             {
-                player.hasKey = true;
-                player.AddCoins(1);
+                player.SetHasKey(true); // cập nhật key + UI
+                player.AddCoins(1);     // tăng coins
             }
 
             SoundUtils.PlaySoundAndDestroy(collectSound, transform.position);
-
             Destroy(gameObject);
         }
     }
