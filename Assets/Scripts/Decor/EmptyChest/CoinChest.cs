@@ -9,6 +9,7 @@ public class CoinChest : MonoBehaviour
     private bool isOpened = false;
     private Animator animator;
     public GameObject keyPrefab;
+    private bool isPlayerNearby = false;
 
     void Start()
     {
@@ -19,11 +20,27 @@ public class CoinChest : MonoBehaviour
         }
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    void Update()
     {
-        if (!isOpened && other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
+        if (isPlayerNearby && !isOpened && Input.GetKeyDown(KeyCode.E))
         {
             OpenChest();
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isPlayerNearby = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isPlayerNearby = false;
         }
     }
 
