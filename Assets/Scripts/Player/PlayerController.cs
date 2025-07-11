@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private GameObject canvasPrefabRoot;
 
-    [Header("Sands Settings")]
+    [Header("Coins Settings")]
     [SerializeField] private int coins;
     [SerializeField] private int hpToGain = 1;
     [SerializeField] private int coinsToExchange = 10;
@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
 
+    public bool HasKey = false;
     private bool canShoot = true;
     private bool isInvincible = false;
     private float invincibleTimer = 0f;
@@ -298,7 +299,7 @@ public class PlayerController : MonoBehaviour
             FindObjectOfType<CoinsManager>()?.UpdateCoinsUI();
         }
     }
-    public void AddSands(int amount)
+    public void AddCoins(int amount)
     {
         coins += amount;
         GameData.TotalCoins = coins;

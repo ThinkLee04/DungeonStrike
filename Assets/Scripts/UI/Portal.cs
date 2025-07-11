@@ -22,6 +22,22 @@ public class Portal : MonoBehaviour
 
             string currentScene = SceneManager.GetActiveScene().name;
 
+            if (currentScene == "Level 1")
+            {
+                if (other.CompareTag("Player"))
+                {
+                    if (player != null && player.HasKey)
+                    {
+                        Debug.Log("Door opened! Loading next level...");
+                        SceneManager.LoadScene(nextSceneName);
+                    }
+                    else
+                    {
+                        Debug.Log("You need a key to open this door.");
+                    }
+                }
+            }
+
             if (currentScene == "Level 3")
             {
                 Time.timeScale = 0f;
