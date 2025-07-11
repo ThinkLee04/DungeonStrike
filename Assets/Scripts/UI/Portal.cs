@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI; // hoặc TMPro nếu dùng TextMeshPro
+using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class Portal : MonoBehaviour
 {
     [SerializeField] private string nextSceneName;
     [SerializeField] private GameObject winPanel;
-    [SerializeField] private Text sandsText; // Nếu dùng TextMeshPro thì là TMP_Text
+    [SerializeField] private Text coinsText;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,7 +16,8 @@ public class Portal : MonoBehaviour
             PlayerController player = other.GetComponent<PlayerController>();
             if (player != null)
             {
-                GameData.TotalSands += player.GetSands(); // cộng dồn sands
+                GameData.TotalCoins = player.GetCoins(); // giữ nguyên score sau màn cuối
+                GameData.CurrentHealth = player.GetCurrentHealth(); // nếu muốn dùng lại máu
             }
 
             string currentScene = SceneManager.GetActiveScene().name;
@@ -28,16 +30,12 @@ public class Portal : MonoBehaviour
                 {
                     winPanel.SetActive(true);
 
-                    // Hiển thị tổng số sands lên text
-                    if (sandsText != null)
+                    if (coinsText != null)
                     {
-                        sandsText.text = $"Total Sands: {GameData.TotalSands}";
+                        coinsText.text = $"Total score: {GameData.TotalCoins}";
                     }
-                    else
-                    {
-                        Debug.LogWarning("Chưa gán SandsText trong Portal script.");
-                    }
-                    SaveRank(GameData.PlayerName, GameData.TotalSands);
+
+                    SaveHighScore(GameData.PlayerName, GameData.TotalCoins);
                 }
             }
             else
@@ -46,20 +44,45 @@ public class Portal : MonoBehaviour
             }
         }
     }
-    private void SaveRank(string playerName, int totalSands)
+
+    [System.Serializable]
+    public class HighScoreEntry
     {
-        // Tăng số lượng người chơi đã lưu
-        int rankCount = PlayerPrefs.GetInt("RankCount", 0);
-
-        // Lưu tên và điểm theo key riêng
-        PlayerPrefs.SetString($"RankName{rankCount}", playerName);
-        PlayerPrefs.SetInt($"RankSands{rankCount}", totalSands);
-
-        // Tăng số lượng xếp hạng
-        PlayerPrefs.SetInt("RankCount", rankCount + 1);
-
-        PlayerPrefs.Save(); // đảm bảo lưu ngay
-        Debug.Log($"Saved {playerName} with {totalSands} sands to rank.");
+        public string name;
+        public int score;
     }
 
+    [System.Serializable]
+    public class HighScoreList
+    {
+        public List<HighScoreEntry> highScoreEntries = new List<HighScoreEntry>();
+    }
+
+    private void SaveHighScore(string name, int score)
+    {
+        // Lấy JSON hiện có
+        string json = PlayerPrefs.GetString("HighScoreTable", "{}");
+        HighScoreList highScoreList = JsonUtility.FromJson<HighScoreList>(json);
+
+        if (highScoreList == null)
+            highScoreList = new HighScoreList();
+
+        // Thêm entry mới
+        HighScoreEntry newEntry = new HighScoreEntry { name = name, score = score };
+        highScoreList.highScoreEntries.Add(newEntry);
+
+        // Sắp xếp giảm dần theo score
+        highScoreList.highScoreEntries.Sort((a, b) => b.score.CompareTo(a.score));
+
+        // Giới hạn 10 người
+        if (highScoreList.highScoreEntries.Count > 10)
+            highScoreList.highScoreEntries.RemoveRange(10, highScoreList.highScoreEntries.Count - 10);
+
+        // Lưu lại
+        string newJson = JsonUtility.ToJson(highScoreList);
+        PlayerPrefs.SetString("HighScoreTable", newJson);
+        PlayerPrefs.Save();
+
+        Debug.Log($"Saved new high score: {name} - {score}");
+    }
 }

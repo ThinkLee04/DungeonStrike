@@ -1,43 +1,81 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class RankingManager : MonoBehaviour
 {
-    public GameObject rankingPanel;
-    public Text rankingText;
+    [Header("Ranking UI")]
+    [SerializeField] private GameObject rankingPanel;
+    [SerializeField] private RectTransform entryContainer;
+    [SerializeField] private RectTransform entryTemplate;
+
+    private List<GameObject> spawnedEntries = new List<GameObject>();
+
+    private class RankEntry
+    {
+        public string name;
+        public int score;
+    }
+
+    private void Start()
+    {
+        rankingPanel.SetActive(false);
+        entryTemplate.gameObject.SetActive(false); // đảm bảo ẩn template
+    }
 
     public void ShowRanking()
     {
         rankingPanel.SetActive(true);
 
-        int count = PlayerPrefs.GetInt("RankCount", 0);
-        var entries = new List<(string name, int score)>();
-
-        // Lấy dữ liệu từ PlayerPrefs
-        for (int i = 0; i < count; i++)
+        // Clear entry cũ
+        foreach (GameObject entry in spawnedEntries)
         {
-            string name = PlayerPrefs.GetString($"RankName{i}", "Unknown");
-            int score = PlayerPrefs.GetInt($"RankSands{i}", 0);
-            entries.Add((name, score));
+            Destroy(entry);
         }
+        spawnedEntries.Clear();
 
-        // Sắp xếp theo score giảm dần
-        entries.Sort((a, b) => b.score.CompareTo(a.score));
+        // Load JSON từ PlayerPrefs
+        string json = PlayerPrefs.GetString("HighScoreTable", "{}");
+        HighScoreList data = JsonUtility.FromJson<HighScoreList>(json);
+        if (data == null || data.highScoreEntries == null) return;
 
-        // Hiển thị
-        string result = "";
-        for (int i = 0; i < entries.Count; i++)
+        float templateHeight = 40f;
+
+        for (int i = 0; i < data.highScoreEntries.Count; i++)
         {
-            result += $"{i + 1}. {entries[i].name} - {entries[i].score} sands\n";
-        }
+            var highscore = data.highScoreEntries[i];
 
-        rankingText.text = result;
+            RectTransform entry = Instantiate(entryTemplate, entryContainer);
+            entry.gameObject.SetActive(true);
+            entry.anchoredPosition = new Vector2(0, -templateHeight * i); // THỦ CÔNG: xếp dọc
+
+            Text posText = entry.Find("posText")?.GetComponent<Text>();
+            Text scoreText = entry.Find("scoreText")?.GetComponent<Text>();
+            Text nameText = entry.Find("nameText")?.GetComponent<Text>();
+
+            if (posText != null) posText.text = (i + 1).ToString();
+            if (scoreText != null) scoreText.text = highscore.score.ToString();
+            if (nameText != null) nameText.text = highscore.name;
+
+            spawnedEntries.Add(entry.gameObject);
+        }
     }
-
 
     public void CloseRanking()
     {
         rankingPanel.SetActive(false);
+    }
+
+    [System.Serializable]
+    private class HighScoreEntry
+    {
+        public string name;
+        public int score;
+    }
+
+    [System.Serializable]
+    private class HighScoreList
+    {
+        public List<HighScoreEntry> highScoreEntries;
     }
 }
