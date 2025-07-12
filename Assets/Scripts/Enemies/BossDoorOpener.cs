@@ -2,7 +2,6 @@
 
 public class BossDoorOpener : MonoBehaviour
 {
-    public DoorController door;   // Gán cửa cần mở ở Inspector
     private EnemyHealth enemyHealth;
     private bool hasOpenedDoor = false;
 
@@ -15,14 +14,11 @@ public class BossDoorOpener : MonoBehaviour
     {
         if (!hasOpenedDoor && enemyHealth != null)
         {
-            // Kiểm tra nếu boss đã chết
+            PlayerController player = FindObjectOfType<PlayerController>();
             if (IsDead())
             {
-                if (door != null)
-                {
-                    door.OpenDoor();
-                    hasOpenedDoor = true;
-                }
+                player.bossKilled = true;
+                hasOpenedDoor = true;
             }
         }
     }

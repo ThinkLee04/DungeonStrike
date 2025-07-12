@@ -39,14 +39,22 @@ public class DoorController : MonoBehaviour
 
                         OpenDoor();
 
-                        Invoke(nameof(GoToNextScene), 1f); // hoặc dùng 0 nếu không có animation
+                        Invoke(nameof(GoToNextScene), 1f);
                     }
                 }
             }
 
             if (currentScene == "Level 2")
             {
-                SceneManager.LoadScene(nextSceneName);
+                if (other.CompareTag("Player"))
+                {
+                    if (player != null && player.bossKilled)
+                    {
+                        OpenDoor();
+
+                        Invoke(nameof(GoToNextScene), 1f);
+                    }
+                }
             }
 
             if (currentScene == "Level 3")
@@ -57,7 +65,7 @@ public class DoorController : MonoBehaviour
                     {
                         OpenDoor();
 
-                        Invoke(nameof(EndGame), 1f); // hoặc dùng 0 nếu không có animation
+                        Invoke(nameof(EndGame), 1f);
                     }
                 }
             }
