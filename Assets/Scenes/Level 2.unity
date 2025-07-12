@@ -20940,17 +20940,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &1417096021 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5622026388707396484, guid: eaf17bebf853821458cbadf9f00c7933, type: 3}
-  m_PrefabInstance: {fileID: 2569717737504084368}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ae120e4211c5484090cdfd31eed6ed7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &1417096023 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6459020115132687462, guid: eaf17bebf853821458cbadf9f00c7933, type: 3}
@@ -36911,7 +36900,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36f2055cf80929747929bc5409120471, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 1417096021}
 --- !u!1 &2080941771
 GameObject:
   m_ObjectHideFlags: 0
@@ -39191,19 +39179,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1008518982428903496, guid: eaf17bebf853821458cbadf9f00c7933, type: 3}
       propertyPath: m_Size.x
-      value: 2.6353168
+      value: 3.7296944
       objectReference: {fileID: 0}
     - target: {fileID: 1008518982428903496, guid: eaf17bebf853821458cbadf9f00c7933, type: 3}
       propertyPath: m_Size.y
-      value: 0.7395067
+      value: 2.563469
       objectReference: {fileID: 0}
     - target: {fileID: 1008518982428903496, guid: eaf17bebf853821458cbadf9f00c7933, type: 3}
       propertyPath: m_Offset.x
-      value: -0.007235527
+      value: -0.10856819
       objectReference: {fileID: 0}
     - target: {fileID: 1008518982428903496, guid: eaf17bebf853821458cbadf9f00c7933, type: 3}
       propertyPath: m_Offset.y
-      value: 0.13024664
+      value: -0.78173447
       objectReference: {fileID: 0}
     - target: {fileID: 3154646056737764902, guid: eaf17bebf853821458cbadf9f00c7933, type: 3}
       propertyPath: m_LocalPosition.x
