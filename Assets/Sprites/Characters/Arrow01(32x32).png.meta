@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,12 +100,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Soldier-Shadow_0
+      name: Arrow01(32x32)_0
       rect:
         serializedVersion: 2
-        x: 42
-        y: 39
-        width: 17
+        x: 7
+        y: 12
+        width: 19
         height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -113,10 +113,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d3c556ab6363ac0a0800000000000000
-      internalID: -6860611473662190531
+      spriteID: 37553f6a2d28af142bfce93baa7dcad9
+      internalID: -1924191363
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0c0c0b517c7d8764180e494e26ffa987
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Soldier-Shadow_0: -6860611473662190531
+      Arrow01(32x32)_0: -1924191363
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
