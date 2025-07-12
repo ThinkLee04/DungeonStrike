@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int coinsToExchange = 10;
 
     [Header("Keys Settings")]
-    [SerializeField] private TextMeshProUGUI keysText; // hoặc TMP_Text nếu dùng TextMeshPro
+    [SerializeField] private TextMeshProUGUI keysText;
 
     private GameObject gameOverPanel;
     private GameObject PausePanel;
@@ -276,11 +276,8 @@ public class PlayerController : MonoBehaviour
 
     public void QuitGame()
     {
-#if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-#else
         Application.Quit();
-#endif
     }
 
     private void UpdateHealthUI()
