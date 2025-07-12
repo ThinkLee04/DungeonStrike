@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f75fc4394f132049944dd48a9aa045d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 6
   arrowPrefab: {fileID: 8317694677039341078, guid: 0d666b884d670b942aae5d67a99ab4ce, type: 3}
   shootPoint: {fileID: 5364583068041635192}
   arrowSpeed: 10
@@ -152,6 +152,7 @@ MonoBehaviour:
   coins: 0
   hpToGain: 1
   coinsToExchange: 10
+  keysText: {fileID: 0}
   hasKey: 0
 --- !u!50 &21777744370031496
 Rigidbody2D:
