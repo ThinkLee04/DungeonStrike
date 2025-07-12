@@ -14,7 +14,7 @@ public class BossDoorOpener : MonoBehaviour
     {
         if (!hasOpenedDoor && enemyHealth != null)
         {
-            PlayerController player = FindObjectOfType<PlayerController>();
+            PlayerController player = FindFirstObjectByType<PlayerController>();
             if (IsDead())
             {
                 player.bossKilled = true;
