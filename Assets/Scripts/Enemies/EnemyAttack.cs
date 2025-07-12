@@ -27,10 +27,6 @@ public class EnemyAttack : MonoBehaviour
                 // SỬA ĐỔI: Truyền cả hướng tấn công và GameObject của Player
                 enemyController.InitiateAttack(lastMoveDirection, collision.gameObject);
             }
-            //demo 
-            //float delayInSeconds = 5f;
-            //Destroy(collision.gameObject, delayInSeconds);
-            //demo
         }
     }
     private void OnCollisionExit2D(Collision2D collision)

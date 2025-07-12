@@ -124,12 +124,4 @@ public class OverlayWaterRiser : MonoBehaviour
             sourceTilemapToReplace.SetTile(tilePosition, newFloodedTile);
         }
     }
-    //===================================
-    //private void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.CompareTag("Player"))
-    //    {
-    //        Debug.Log("Nước đã chạm vào Player! GAME OVER.");
-    //    }
-    //}
 }
