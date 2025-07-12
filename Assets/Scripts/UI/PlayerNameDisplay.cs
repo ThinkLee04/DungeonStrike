@@ -7,12 +7,6 @@ public class PlayerNameDisplay : MonoBehaviour
 
     void Start()
     {
-        //if (welcomeText == null)
-        //{
-        //    Debug.LogError("WelcomeText not assigned!");
-        //    return;
-        //}
-
         string name = GameData.PlayerName;
 
         // Nếu GameData chưa có, thử lấy từ PlayerPrefs
