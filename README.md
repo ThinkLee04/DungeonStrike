@@ -5,7 +5,7 @@ Developed by **BitBlasters**
 Members:
 - Dinh Le Thinh
 - Tang Phat
-- Le Ho Hoang Long
+- Le Ho Hoang Long 
 - Nguyen Thanh Binh
 
 ---
