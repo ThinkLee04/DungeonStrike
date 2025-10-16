@@ -7,7 +7,6 @@ Members:
 - Tang Phat
 - Le Ho Hoang Long 
 - Nguyen Thanh Binh
-
 ---
 
 ## 🕹 Game Introduction
